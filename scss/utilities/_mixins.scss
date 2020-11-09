@@ -1,0 +1,149 @@
+// ======================================
+//  Mixins
+// ======================================
+
+
+// buttons
+
+@mixin buttons(
+$btn-text-color:null,
+$btn-margin:null,
+$btn-uppercase:null,
+$padding:null,
+$width:null
+)
+
+{
+  display:block;
+  width:$width;
+  @include mq ('tablet'){
+    display:initial;
+  }
+  color:$btn-text-color;
+  font-size: em(18px);
+  font-weight:$font-weight--light;
+  border-radius:5px;
+  text-align: center;
+  text-decoration: none;
+  padding:$padding;
+  margin-bottom:$btn-margin;
+  border:none;
+  text-transform: $btn-uppercase;
+  @content;
+  &:hover{
+    font-weight:$font-weight--bold;
+    color:$white;
+    }
+}
+
+// responsive flex container
+
+@mixin flexy (
+$disp:null,
+$dir:null,
+$wrap:null,
+$just:null,
+$alself:null)
+{
+display:$disp;
+flex-direction: $dir;
+flex-wrap: $wrap;
+justify-content: $just;
+align-self: $alself;
+}
+
+// images
+
+@mixin images(
+$img-brdr:none,
+$img-padding:none,
+$img-width:100%
+){
+display:block;
+margin:auto;
+border:$img-brdr;
+padding:$img-padding;
+width:$img-width;
+@content;
+}
+
+// h1 styling
+
+@mixin h1 {
+font-size: em(32px);
+font-weight:$font-weight--bold;
+padding-left: em(20px);
+color:$color-secondary;
+margin:0;
+@content;
+}
+
+// h4 styling
+@mixin h4 {
+  color:$color-text;
+  font-weight:$font-weight--light;
+  font-size:em(21px);
+  margin: 2em 0;
+  @content;
+}
+
+
+// acnhor links styling
+
+@mixin link {
+  color:$color-secondary;
+  font-weight:700;
+  text-decoration: none;
+
+}
+
+// blockquote
+@mixin blockquote{
+font-size: em(23px);
+font-style:italic;
+padding-left:em(30px);
+border-left: 10px solid $color-secondary;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+
+// form
+
+@mixin form-input{
+  width:100%;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom: 5px solid $color-secondary;
+  padding: 10px 0;
+  margin-bottom:em(35px);
+}
+
+
+
+// media queries for navigation only
+
+@mixin mq ($breakpoint){
+
+  @if $breakpoint == 'tablet'{
+    @media (min-width:$breakpoint-tablet){
+      @content;
+  }
+ }
+
+ @else if $breakpoint == 'tablet-max'{
+   @media (max-width:$breakpoint-tablet-max){
+     @content;
+   }
+ }
+
+
+
+
+  @else if $breakpoint == 'desktop'{
+    @media (min-width:$breakpoint-desktop){
+      @content;
+    }
+  }
+}

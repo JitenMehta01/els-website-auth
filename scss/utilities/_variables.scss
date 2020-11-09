@@ -1,0 +1,92 @@
+// ======================================
+//  Variables
+// ======================================
+
+// colors
+
+$white:#fff;
+
+$color-text:#888;
+$color-secondary:#58e1c1; // teal
+
+// ================================================================
+
+// buttons
+$default:#51ddfc; // teal
+$success:#63cc82; // light green
+$error:#e4757a; //  pink
+$warning:#fd7856; // orange
+$info:#927bc1; // purple
+
+// UI buttons MAPS
+
+$ui-buttons:(
+default:  $default,
+success:  $success,
+error:    $error,
+warning:  $warning,
+info:     $info
+);
+
+// ================================================================
+
+// Grid systems
+
+$grid-col-12:#80e8d1;
+
+$grid-col-6:#3fabca;
+
+$grid-col-4:#7ee6fd;
+
+$grid-col-3:#deb2ee;
+
+$grid-col-5:#88d9a0;
+
+$grid-col-7:#ec9fa3;
+
+$grid-col-8:#fd9f85;
+
+$grid-buttons:(
+3: $grid-col-3,
+4: $grid-col-4,
+5: $grid-col-5,
+6: $grid-col-6,
+7: $grid-col-7,
+8: $grid-col-8,
+12: $grid-col-12
+
+);
+
+// Grid configeration Variables
+
+$g-col-width:     65px;
+$g-gutter-width:  20px;
+$g-col-count:     12;
+$g-cont-max-w:    1050px;
+
+// ==========================================================
+
+// Fonts
+$font-stack-primary:  'Helvetica', Sans-Serif;
+
+//Font-weights
+
+$font-weight--thin:        100;
+$font-weight--light:       300;
+$font-weight--meduim:      400;
+$font-weight--bold:        600;
+$font-weight--extra-bold:  800;
+$font-weight--ultra-bold:  900;
+
+// Font-size + line height
+
+$base-font--size: 16px;
+$base--line--height: 24px;
+
+// ==========================================================
+
+// breakpoints for nav
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop:1024px;
+$breakpoint-tablet-max:767px;

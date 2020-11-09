@@ -1,0 +1,20 @@
+
+// ======================================
+//  Buttons
+// ======================================
+
+ @each $theme, $color in $ui-buttons{
+   .btn--#{$theme}{
+     background-color: $color;
+     @include buttons($btn-text-color:$white,
+     $btn-margin: em(20px),
+     $btn-uppercase:uppercase,
+     $padding:1em 2em,
+     $width:100%
+     );
+     @include mq ('tablet'){
+       width:initial;
+     }
+
+}
+}
