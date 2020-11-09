@@ -2,18 +2,3 @@
   box-sizing:border-box;
 }
 
-.container{
-  color:$color-text;
-  font-size:1rem;
-  line-height:($base--line--height/$base-font--size);
-  font-family: $font-stack-primary;
-  margin:auto;
-  width:90%;
-  max-width:1600px;
-}
-
-p {
-  font-size: em(18px);
-}
-
-//
