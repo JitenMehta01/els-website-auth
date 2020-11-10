@@ -1,0 +1,17 @@
+* {
+    box-sizing:border-box;
+  }
+  
+  .container{
+    color:$white;
+    font-size:1rem;
+    line-height:($base--line--height/$base-font--size);
+    font-family: $font-stack-primary;
+    max-width:1600px;
+    margin: 0 auto;
+  }
+  
+  p {
+    font-size: em(18px);
+  }
+  

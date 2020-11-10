@@ -1,0 +1,94 @@
+/***** Grid ****/
+#main{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 10px;
+    height:100vh;
+    grid-template-areas:
+    "header"
+    "hero"
+    "intro"
+    "process"
+    "portfolio"
+    "clients"
+    "testimonial"
+    "contact"
+    "form"
+    "footer";
+  }
+  
+  header{
+    grid-area: header;
+    background-color: green;
+  }
+  
+  
+  #hero-section{
+    grid-area:hero;
+    background-color: #6ad78a;
+    
+  }
+  
+  
+  #e-learning-intro{
+    grid-area:intro;
+    background-color: red;
+  }
+  
+  #e-learning-process{
+    grid-area: process;
+    background-color: yellow;
+  }
+  
+  #portfolio{
+    grid-area:portfolio;
+    background-color: #064a57;
+  }
+  
+  #clients{
+    grid-area: clients;
+    background-color: #8ec96d;
+  }
+  
+  #testimonial{
+    grid-area:testimonial;
+    background-color: skyblue;
+  }
+
+  #contact{
+    grid-area:contact;
+    background-color:violet;
+  }
+  
+  #form{
+    grid-area:form;
+    background-color: chocolate;
+  }
+  footer{
+    grid-area:footer;
+    background-color: teal;
+  }
+
+  
+
+  
+  #main{
+    @include mq ('desktop'){
+        grid-template-columns:80px 2fr repeat(2, 1fr);
+        grid-template-areas:
+        "header header header header"
+        "hero hero hero hero"
+        "intro intro intro intro"
+        "process process process process"
+        "portfolio portfolio portfolio portfolio"
+        "clients clients clients clients"
+        "testimonial testimonial testimonial testimonial"
+        "contact contact form form"
+        "footer footer footer footer";
+          
+    }
+  }
+
+
+

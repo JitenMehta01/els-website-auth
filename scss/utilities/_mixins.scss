@@ -1,0 +1,103 @@
+// ======================================
+//  Mixins
+// ======================================
+
+
+// ======================================
+// BUTTONS
+
+@mixin buttons(
+$btn-text-color:null,
+$btn-margin:null,
+$btn-uppercase:null,
+$btn-width:null,
+$btn-background:null
+)
+
+{
+border-radius:21px;
+border: 2px solid $white;
+width:$btn-width;
+padding:.8em 1.7em;
+margin:$btn-margin;
+color:$white;
+background: $btn-background;
+}
+
+// ======================================
+// FLEXY 
+
+@mixin flexy (
+$disp:null,
+$dir:null,
+$wrap:null,
+$just:null,
+$alself:null)
+{
+display:$disp;
+flex-direction: $dir;
+flex-wrap: $wrap;
+justify-content: $just;
+align-self: $alself;
+}
+
+// ======================================
+// H1
+
+@mixin h1{
+    font-size: $font-default;
+    font-weight:$font-weight--bold;
+    color:$white;
+    margin:0;
+    @content;
+}
+
+// ======================================
+// H1
+
+@mixin h2{
+    font-weight:$font-weight--bold;
+    margin:0;
+    @content;
+}
+
+// ======================================
+// p
+
+@mixin p{
+    font-weight:$font-weight--light;
+    margin:0;
+    @content;
+}
+
+// ======================================
+// form
+
+@mixin form-input{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    padding: 10px 0;
+  }
+
+
+// ======================================
+// mq
+
+  @mixin mq ($breakpoint){
+
+    @if $breakpoint == 'tablet'{
+      @media (min-width:$breakpoint-tablet){
+        @content;
+    }
+   }
+  
+  
+
+  
+    @else if $breakpoint == 'desktop'{
+      @media (min-width:$breakpoint-desktop){
+        @content;
+      }
+    }
+  }

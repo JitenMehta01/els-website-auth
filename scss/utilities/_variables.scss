@@ -2,29 +2,28 @@
 //  Variables
 // ======================================
 
-// Primary colors
+
+// ================================================================
+// COLOURS
+
+
+// Primary colours
 
 $white:#fff;
 $teal:#2A464E; 
 $yellow:#F3B82A;
 
-// ================================================================
 
 // background colurs
-$background-light-teal:#0E7368;
+$background-teal:#0E7368;
 $background-light-grey:#F2F2F2;
+$background-teal-dark:#073A34;
 
 
 // Form colours
 $form-underline:#707070;
 $field-background:#FAFAFA;
 
-
-
-// gradients
-
-$gradient-grey:#2A464E00;
-$gradient-black:#080E10;
 
 // list icons
 $list-light-blue:#2196F3;
@@ -34,9 +33,35 @@ $list-dark-blue:#186EB3;
 $mobile-yellow:#F3A026;
 
 
+// ================================================================
+// FONTS
+$font-stack-primary: 'Poppins', sans-serif;
+$font-stack-heading:'Mulish', sans-serif;
 
-// UI buttons MAPS
 
-h1{
-    color:$teal;
-}
+//Font-weights
+
+$font-weight--thin:        100;
+$font-weight--light:       300;
+$font-weight--meduim:      400;
+$font-weight--bold:        600;
+$font-weight--extra-bold:  800;
+$font-weight--ultra-bold:  900;
+
+// Font-size + line height
+
+$base-font--size: 16px;
+$base--line--height: 24px;
+
+// font-size for different devices
+$font-default: 32px;
+$font-tablet: 40px;
+$font-desktop: 55px; 
+
+
+
+// ================================================================
+// MQ
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop:1024px;
