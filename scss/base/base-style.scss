@@ -5,13 +5,19 @@
   .container{
     color:$white;
     font-size:1rem;
-    line-height:($base--line--height/$base-font--size);
     font-family: $font-stack-primary;
-    max-width:1600px;
+    max-width:1250px;
     margin: 0 auto;
+    @include mq('desktop'){
+        padding:0;
+    }
   }
-  
+
+
   p {
-    font-size: em(18px);
+    @include p;
   }
-  
+   h1, h2, h3, h4 , h5, h6{
+    font-family: $font-stack-heading;
+    margin:0;
+   }

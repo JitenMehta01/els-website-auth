@@ -28,17 +28,16 @@ background: $btn-background;
 // FLEXY 
 
 @mixin flexy (
-$disp:null,
 $dir:null,
 $wrap:null,
 $just:null,
-$alself:null)
+$alitems:null)
 {
-display:$disp;
+display:flex;
 flex-direction: $dir;
 flex-wrap: $wrap;
 justify-content: $just;
-align-self: $alself;
+align-items: $alitems;
 }
 
 // ======================================
@@ -46,7 +45,7 @@ align-self: $alself;
 
 @mixin h1{
     font-size: $font-default;
-    font-weight:$font-weight--bold;
+    font-weight:$font-weight--meduim;
     color:$white;
     margin:0;
     @content;
@@ -66,7 +65,8 @@ align-self: $alself;
 
 @mixin p{
     font-weight:$font-weight--light;
-    margin:0;
+    font-size:16px;
+    font-family: $font-stack-primary;
     @content;
 }
 

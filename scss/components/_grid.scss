@@ -3,8 +3,7 @@
     display:grid;
     grid-template-columns:1fr;
     grid-auto-rows: minmax(20px, auto);
-    grid-gap: 10px;
-    height:100vh;
+    grid-template-rows: repeat(1, 70px);
     grid-template-areas:
     "header"
     "hero"
@@ -20,7 +19,6 @@
   
   header{
     grid-area: header;
-    background-color: green;
   }
   
   
@@ -64,7 +62,7 @@
   #form{
     grid-area:form;
     background-color: chocolate;
-  }
+  } 
   footer{
     grid-area:footer;
     background-color: teal;

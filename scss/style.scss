@@ -2,11 +2,16 @@
 // PARTIAL IMPORTS
 //======================================
 
-// utilities
 
+// utilities
 @import 'utilities/variables',
 'utilities/mixins';
 
+// base styles
 @import 'base/base-style';
 
-@import 'components/grid';
+
+// components
+@import 'components/grid',
+        'components/nav',
+        'components/sections';

@@ -1,0 +1,22 @@
+header{
+    background-color: black;
+    & img{
+        width:200px;
+        margin: 0 auto 0 1em;
+        
+    } & .container {
+        height:100%;
+        @include flexy($alitems:center);
+        padding: 0 0 0 25px;
+    } & .container .hamburgermenu{
+        width:80px;
+        height:100%;
+        background-color:$background-teal;
+        @include flexy($just:center, $alitems:center)
+    } 
+    & .container .hamburgermenu svg{ 
+        width:35px;
+        height:35px;
+        fill: $yellow;
+    }
+}
