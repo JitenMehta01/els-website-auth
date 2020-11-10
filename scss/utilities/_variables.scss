@@ -2,11 +2,41 @@
 //  Variables
 // ======================================
 
+// Primary colors
 
-// ==========================================================
+$white:#fff;
+$teal:#2A464E; 
+$yellow:#F3B82A;
 
-// breakpoints 
+// ================================================================
 
-$breakpoint-tablet: 768px;
-$breakpoint-desktop:1024px;
-$breakpoint-tablet-max:767px;
+// background colurs
+$background-light-teal:#0E7368;
+$background-light-grey:#F2F2F2;
+
+
+// Form colours
+$form-underline:#707070;
+$field-background:#FAFAFA;
+
+
+
+// gradients
+
+$gradient-grey:#2A464E00;
+$gradient-black:#080E10;
+
+// list icons
+$list-light-blue:#2196F3;
+$list-dark-blue:#186EB3;
+
+//mobile
+$mobile-yellow:#F3A026;
+
+
+
+// UI buttons MAPS
+
+h1{
+    color:$teal;
+}
