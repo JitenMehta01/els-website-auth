@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="enter-pin-icon"  viewBox="0 0 140 258">
+<g id="PIN" transform="translate(-1644 -2928)">
+<g id="_16_Security" data-name="16 Security" transform="translate(1651 2928)">
+    <rect id="Rectangle_75" data-name="Rectangle 75" width="10.648" height="23.859" rx="1" transform="translate(0 35.229)" fill="#fff"/>
+    <rect id="Rectangle_76" data-name="Rectangle 76" width="10.648" height="15.054" rx="1" transform="translate(0 66.052)" fill="#fff"/>
+    <path id="Path_148" data-name="Path 148" d="M118.5,199.975H28.985a15.632,15.632,0,0,1-15.613-15.613V15.588A15.632,15.632,0,0,1,28.985-.025H118.5a15.632,15.632,0,0,1,15.613,15.613V184.362A15.632,15.632,0,0,1,118.5,199.975ZM28.985,6.22a9.368,9.368,0,0,0-9.368,9.368V184.362a9.368,9.368,0,0,0,9.368,9.368H118.5a9.368,9.368,0,0,0,9.368-9.368V15.588A9.368,9.368,0,0,0,118.5,6.22Z" transform="translate(-8.969 0.025)" fill="#fff"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="8.806" cy="8.806" r="8.806" transform="translate(55.966 166.055)" fill="#fff"/>
+    <path id="Path_149" data-name="Path 149" d="M49.619,11.86H32.008a3.123,3.123,0,0,1,0-6.245H49.619a3.123,3.123,0,0,1,0,6.245Z" transform="translate(23.958 11.996)" fill="#fff"/>
+    <path id="Path_150" data-name="Path 150" d="M86.607,94.664H24.956a3.123,3.123,0,0,1-3.123-3.123V29.893a3.123,3.123,0,0,1,3.123-3.123H86.607a3.123,3.123,0,0,1,3.123,3.123V91.541A3.123,3.123,0,0,1,86.607,94.664ZM28.078,88.419H83.485v-55.4H28.078Z" transform="translate(8.99 56.899)" fill="#fff"/>
+    <path id="Path_151" data-name="Path 151" d="M64.415,53.971H29.187a3.123,3.123,0,0,1-3.123-3.123V37.634a20.737,20.737,0,1,1,41.474,0V50.849A3.123,3.123,0,0,1,64.415,53.971ZM32.309,47.726H61.293v-10.1a14.492,14.492,0,1,0-28.984,0Z" transform="translate(17.97 35.943)" fill="#fff"/>
+    <path id="Path_152" data-name="Path 152" d="M38.011,34.115a7.806,7.806,0,1,1-7.806,7.806A7.806,7.806,0,0,1,38.011,34.115Z" transform="translate(26.76 72.489)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_153" data-name="Path 153" d="M34.828,55.393a3.123,3.123,0,0,1-3.123-3.123V39.059a3.123,3.123,0,1,1,6.245,0V52.27A3.123,3.123,0,0,1,34.828,55.393Z" transform="translate(29.944 76.354)" fill="#fff"/>
+</g>
+<text id="ENTER_PIN" data-name="ENTER PIN" transform="translate(1644 3181)" fill="#fff" font-size="18" font-family="SegoeUIBlack, Segoe UI" letter-spacing="0.3em"><tspan x="0" y="0">ENTER PIN</tspan></text>
+</g>
+</symbol>
+</svg>

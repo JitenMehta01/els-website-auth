@@ -8,22 +8,26 @@
   font-family: "Poppins", sans-serif;
   max-width: 1250px;
   margin: 0 auto;
+  padding: 25px;
 }
 @media (min-width: 1024px) {
   .container {
-    padding: 0;
+    padding: 50px;
   }
+}
+.container h5 {
+  font-weight: 800;
+  letter-spacing: 0.4em;
 }
 
 p {
   font-weight: 300;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-family: 100;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Mulish", sans-serif;
-  margin: 0;
 }
 
 /***** Grid ****/
@@ -41,22 +45,18 @@ header {
 
 #hero-section {
   grid-area: hero;
-  background-color: #6ad78a;
 }
 
 #e-learning-intro {
   grid-area: intro;
-  background-color: red;
 }
 
 #e-learning-process {
   grid-area: process;
-  background-color: yellow;
 }
 
 #portfolio {
   grid-area: portfolio;
-  background-color: #064a57;
 }
 
 #clients {
@@ -103,6 +103,7 @@ header .container {
   display: flex;
   align-items: center;
   padding: 0 0 0 25px;
+  max-width: 100%;
 }
 header .container .hamburgermenu {
   width: 80px;
@@ -118,6 +119,8 @@ header .container .hamburgermenu svg {
   fill: #F3B82A;
 }
 
+/***** hero section
+*****************************/
 #hero-section {
   display: flex;
   background-image: url(../img/hero-tinted.jpg);
@@ -130,6 +133,7 @@ header .container .hamburgermenu svg {
   font-weight: 400;
   color: #fff;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,16 +142,180 @@ header .container .hamburgermenu svg {
 #hero-section .container .hero-heading {
   padding: 0 25px;
 }
-#hero-section .container .arrow-container {
+@media (min-width: 768px) {
+  #hero-section .container .hero-heading {
+    text-align: left;
+    padding-left: 25%;
+    margin-bottom: auto;
+  }
+  #hero-section .container .hero-heading p {
+    font-size: 20px;
+  }
+}
+#hero-section .container .arrow-container-mobile {
   width: 90%;
   background-color: #0E7368;
   margin-top: auto;
   align-self: flex-start;
   text-align: left;
-  padding: 1em;
+  padding: 25px;
+}
+@media (min-width: 1024px) {
+  #hero-section .container .arrow-container-mobile {
+    display: none;
+  }
+}
+#hero-section .container .arrow-container-mobile h5 {
+  color: #F3B82A;
+  margin: 0;
 }
 #hero-section h1 {
   margin-top: 150px;
+}
+#hero-section .container .arrow-container {
+  display: none;
+  background-color: #0E7368;
+}
+@media (min-width: 1024px) {
+  #hero-section .container .arrow-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+#hero-section .container .arrow-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px 50px;
+}
+#hero-section .container .arrow-container h5 {
+  margin: 0;
+  color: #F3B82A;
+}
+
+/***** e-learning intro
+*****************************/
+#e-learning-intro .container h2,
+#e-learning-intro .container h5,
+#e-learning-intro .container p {
+  color: #2A464E;
+}
+
+#e-learning-intro .container svg {
+  width: 100%;
+  margin: 25px 0;
+  height: 220px;
+}
+
+/***** e-learning process
+*****************************/
+#e-learning-process {
+  background-color: #2A464E;
+}
+#e-learning-process .container {
+  margin-top: 25px;
+}
+@media (min-width: 1024px) {
+  #e-learning-process .container {
+    padding: 25px;
+  }
+}
+
+#e-learning-process .container .process-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#e-learning-process .container .process-icon-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  #e-learning-process .container .process-icon-container div {
+    flex: 1 70px;
+    padding: 0 20px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  #e-learning-process .container .process-icon-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .e-learning-intro-mobile {
+    display: none;
+  }
+}
+
+.e-learning-intro {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .e-learning-intro {
+    display: block;
+  }
+}
+.e-learning-intro .container > div {
+  display: flex;
+  margin-top: 50px;
+}
+.e-learning-intro .container > div img {
+  width: 500px;
+}
+.e-learning-intro .container > div img + div > h2 {
+  font-size: 30px;
+}
+.e-learning-intro h2 {
+  font-size: 50px;
+}
+.e-learning-intro h4 {
+  color: #2A464E;
+}
+
+/***** people skill products
+*****************************/
+#portfolio .container h5,
+#portfolio .container p {
+  color: #2A464E;
+  text-align: center;
+}
+
+#portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  #portfolio .container p {
+    font-size: 20px;
+  }
+}
+#portfolio .container img {
+  width: 350px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  #portfolio .container img {
+    width: 100%;
+    padding: 20px;
+  }
+}
+#portfolio .container .portfolio-icon-container {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  #portfolio .container .portfolio-icon-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

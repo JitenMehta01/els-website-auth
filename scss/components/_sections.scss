@@ -1,6 +1,5 @@
-// hero section
-
-
+/***** hero section
+*****************************/
 #hero-section{
     @include flexy;
     background-image: url(../img/hero-tinted.jpg);
@@ -9,21 +8,175 @@
     & .container{
         text-align: center;
         @include h1;
+        padding:0;
         @include flexy($dir:column,$alitems:center, $just:center);
     }
 
     & .container .hero-heading{
         padding: 0 25px;
+        @include mq('tablet'){
+            text-align: left;
+            padding-left:25%;
+            margin-bottom:auto;
+           & p {
+                font-size:20px;
+            }
+        }
+        
     }
 
-    & .container .arrow-container{
+    & .container .arrow-container-mobile{
         width:90%;
         background-color:$background-teal;
         margin-top:auto;
-        align-self: flex-start;
+        align-self: flex-start; 
         text-align: left;
-        padding: 1em;
+        padding: 25px;
+        @include mq('desktop'){
+            display:none;
+        }
+
+        & h5{
+            color:$yellow;
+            margin:0;
+        }
     } & h1 {
         margin-top:150px;
     }
+
+    & .container .arrow-container{
+        display:none;
+        background-color: $background-teal;
+        @include mq ('desktop'){
+            @include flexy($dir:row); 
+        }
+        & div {
+            @include flexy($just:flex-start, $dir:column, $alitems:flex-start);
+            text-align: left;  
+            padding:10px 50px;
+        }   & h5{
+            margin:0;
+            color:$yellow;
+        }
+    }
+
+}
+
+ 
+
+/***** e-learning intro
+*****************************/
+#e-learning-intro .container h2, 
+#e-learning-intro .container h5, 
+#e-learning-intro .container p{
+    color:$teal;
+}
+
+
+
+#e-learning-intro .container svg{
+    width:100%;
+    margin:25px 0;
+    height:220px;
+}
+
+
+
+
+/***** e-learning process
+*****************************/
+
+#e-learning-process{
+    background-color:$teal;
+    & .container{
+        margin-top:25px;
+    }
+
+    & .container{
+        @include mq('desktop'){
+            padding:25px;
+        }
+    }
+}
+
+#e-learning-process .container .process-icon-container{
+    @include flexy($dir:column,$alitems:center);
+    & div{
+        @include flexy($dir:column, $alitems:center);
+        text-align: center;
+        margin-bottom:50px;
+        @include mq ('tablet'){
+            flex:1 70px;
+            padding:0 20px;
+            margin-bottom:0;
+        }
+    }
+    @include mq ('tablet'){
+        @include flexy($dir:row)
+    }
+}
+
+.e-learning-intro-mobile{
+    @include mq('desktop'){
+        display:none;
+    }
+}
+
+.e-learning-intro{
+    display:none;
+    @include mq('desktop'){
+        display:block;
+    }
+    & .container > div {
+        @include flexy; 
+        margin-top:50px;
+        & img{
+            width:500px;
+            & + div > h2{
+                font-size:30px;;
+            }
+        }
+    }
+
+    & h2{
+        font-size:50px;
+    }
+    
+    & h4{
+        color:$teal; 
+    }
+}
+
+
+
+/***** people skill products
+*****************************/
+
+#portfolio .container h5, 
+#portfolio .container p{
+    color:$teal;
+    text-align: center;
+
+}
+
+#portfolio .container {
+    @include flexy($dir:column, $alitems:center);
+    & p {
+        @include mq('desktop'){
+            font-size:20px;
+        }
+    }
+    & img {
+        width:350px;
+        margin-bottom:25px;
+        @include mq ('tablet'){
+            width:100%;
+            padding:20px;
+        }
+  } & .portfolio-icon-container{
+    margin-top:25px;
+    @include mq ('tablet'){
+        @include flexy($dir:row)
+    }
+  }
 }

@@ -8,6 +8,7 @@ header{
         height:100%;
         @include flexy($alitems:center);
         padding: 0 0 0 25px;
+        max-width:100%;
     } & .container .hamburgermenu{
         width:80px;
         height:100%;
