@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -24,6 +25,7 @@ p {
   font-weight: 300;
   font-size: 14px;
   font-family: 100;
+  line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,7 +89,8 @@ footer {
 }
 
 header {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 header img {
   width: 200px;
@@ -99,6 +102,22 @@ header .container {
   align-items: center;
   padding: 0 0 0 25px;
   max-width: 100%;
+}
+header .container button {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .container button {
+    display: block;
+    margin-right: 20px;
+    padding: 12px 35px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #0e7368 0%, #073a34 35%);
+    border: solid 2px #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
 header .container .hamburgermenu {
   width: 80px;
@@ -118,9 +137,18 @@ header .container .hamburgermenu svg {
 *****************************/
 #hero-section {
   display: flex;
+  z-index: 1;
+  margin-top: -70px;
+  background-size: cover;
   background-image: url(../img/hero-tinted.jpg);
   background-position: top center;
-  height: 80vh;
+  height: 90vh;
+  /** progress bar **/
+}
+@media (min-width: 768px) {
+  #hero-section {
+    height: 80vh;
+  }
 }
 #hero-section .container {
   text-align: center;
@@ -133,6 +161,9 @@ header .container .hamburgermenu svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#hero-section .container button {
+  margin-right: 20px;
 }
 #hero-section .container .hero-heading {
   padding: 0 25px;
@@ -155,6 +186,12 @@ header .container .hamburgermenu svg {
   text-align: left;
   padding: 25px;
 }
+#hero-section .container .arrow-container-mobile .arrow-mobile {
+  display: flex;
+}
+#hero-section .container .arrow-container-mobile .arrow-mobile p:nth-child(2) {
+  margin-left: auto;
+}
 @media (min-width: 1024px) {
   #hero-section .container .arrow-container-mobile {
     display: none;
@@ -163,9 +200,14 @@ header .container .hamburgermenu svg {
 #hero-section .container .arrow-container-mobile h5 {
   color: #F3B82A;
   margin: 0;
+  letter-spacing: initial;
+  font-size: 22px;
 }
 #hero-section h1 {
-  margin-top: 150px;
+  margin-top: 300px;
+  font-weight: 100;
+  margin-bottom: 0;
+  font-size: 60px;
 }
 #hero-section .container .arrow-container {
   display: none;
@@ -175,6 +217,8 @@ header .container .hamburgermenu svg {
   #hero-section .container .arrow-container {
     display: flex;
     flex-direction: row;
+    align-self: flex-start;
+    width: 95%;
   }
 }
 #hero-section .container .arrow-container div {
@@ -183,11 +227,42 @@ header .container .hamburgermenu svg {
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  padding: 10px 50px;
+  padding: 10px 30px;
 }
 #hero-section .container .arrow-container h5 {
   margin: 0;
   color: #F3B82A;
+  letter-spacing: initial;
+}
+#hero-section .progress-bar {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #hero-section .progress-bar {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 25px 30px auto;
+  }
+  #hero-section .progress-bar p {
+    font-weight: 400;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  #hero-section .progress-bar .bar {
+    background-color: #8D8D8C;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 15px;
+  }
+  #hero-section .progress-bar .bar .bar-0-percent {
+    padding: 1.5px;
+    background-color: #2A464E;
+    height: 15%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
 }
 
 /***** e-learning intro

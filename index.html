@@ -132,7 +132,7 @@
 
    <!-- twitter -->
 
-   <svg xmlns="http://www.w3.org/2000/svg" width="33.654" height="27.333">
+   <svg xmlns="http://www.w3.org/2000/svg" width="33.654" height="27.333" style="display:none;">
     <symbol id="twitter"  viewBox="0 0 33.654 27.333">
       <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M30.194,10.193c.021.3.021.6.021.9,0,9.118-6.94,19.624-19.624,19.624A19.491,19.491,0,0,1,0,27.617a14.268,14.268,0,0,0,1.666.085,13.813,13.813,0,0,0,8.563-2.947A6.909,6.909,0,0,1,3.78,19.973a8.7,8.7,0,0,0,1.3.107A7.3,7.3,0,0,0,6.9,19.845a6.9,6.9,0,0,1-5.531-6.769V12.99a6.946,6.946,0,0,0,3.118.875A6.908,6.908,0,0,1,2.349,4.641,19.605,19.605,0,0,0,16.57,11.858a7.786,7.786,0,0,1-.171-1.58A6.9,6.9,0,0,1,28.336,5.559a13.58,13.58,0,0,0,4.378-1.666,6.879,6.879,0,0,1-3.032,3.8,13.827,13.827,0,0,0,3.972-1.068,14.827,14.827,0,0,1-3.459,3.566Z" transform="translate(0 -3.381)" fill="#fff"/>
     </symbol>
@@ -140,7 +140,7 @@
 
    <!-- youtube -->
 
-   <svg xmlns="http://www.w3.org/2000/svg" width="38.874" height="27.333">
+   <svg xmlns="http://www.w3.org/2000/svg" width="38.874" height="27.333" style="display:none;">
     <symbol id="youtube"  viewBox="0 0 38.874 27.333">
       <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M39.111,8.777a4.884,4.884,0,0,0-3.437-3.459C32.643,4.5,20.487,4.5,20.487,4.5S8.331,4.5,5.3,5.318A4.885,4.885,0,0,0,1.862,8.777c-.812,3.051-.812,9.417-.812,9.417s0,6.366.812,9.417a4.812,4.812,0,0,0,3.437,3.4c3.032.818,15.188.818,15.188.818s12.156,0,15.188-.818a4.812,4.812,0,0,0,3.437-3.4c.812-3.051.812-9.417.812-9.417s0-6.366-.812-9.417Zm-22.6,15.2V12.414l10.16,5.78-10.16,5.78Z" transform="translate(-1.05 -4.5)" fill="#fff"/>
     </symbol>
@@ -149,7 +149,7 @@
 
    <!-- linkedin -->
 
-   <svg xmlns="http://www.w3.org/2000/svg" width="27.333" height="27.333">
+   <svg xmlns="http://www.w3.org/2000/svg" width="27.333" height="27.333" style="display:none;">
     <symbol id="linkedin"  viewBox="0 0 27.333 27.333">
       <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M6.118,27.334H.451V9.085H6.118ZM3.282,6.6A3.3,3.3,0,1,1,6.564,3.283,3.31,3.31,0,0,1,3.282,6.6ZM27.327,27.334H21.673V18.45c0-2.117-.043-4.832-2.946-4.832-2.946,0-3.4,2.3-3.4,4.68v9.036H9.668V9.085H15.1v2.489h.079a5.954,5.954,0,0,1,5.362-2.947c5.735,0,6.789,3.777,6.789,8.682V27.334Z" transform="translate(0 -0.001)" fill="#fff"/>
     </symbol>
@@ -169,6 +169,7 @@
         <header>
           <div class = 'container'>
             <img src = 'img\els-logo.png'>
+            <button>Log in</button>
             <div class = 'hamburgermenu'>
               <svg> 
                 <use xlink:href="#hamburger" class = 'svg-icon'></use>
@@ -187,7 +188,10 @@
             </div>
             
             <div class = 'arrow-container-mobile'> <!-- mobile only -->
+              <div class = 'arrow-mobile'>
               <p>01</p>
+              <p class = 'arrows'>< ></p>
+              </div>
               <h5>Learning</h5>
               <p>Individual and collaborative People Skills programmes in VR that excite learners and let them put theory into practise.</p>
             </div>
@@ -209,6 +213,13 @@
             <p>Easy! Thousands of employees can receive their own headsets and learning apps in a few days.</p>
          </div>
         
+            </div>
+          </div>
+
+          <div class = 'progress-bar'>
+            <p>0%</p>
+            <div class ='bar'>
+              <div class ='bar-0-percent'></div>
             </div>
           </div>
         </section>
