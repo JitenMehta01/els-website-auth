@@ -77,7 +77,6 @@ header {
 
 footer {
   grid-area: footer;
-  background-color: teal;
 }
 
 @media (min-width: 1024px) {
@@ -454,6 +453,113 @@ header .container .hamburgermenu svg {
   background-color: #FAFAFA;
   border: #707070 1px solid;
   padding: 10px 20px;
+}
+
+/***** footer
+*****************************/
+footer {
+  background-color: #2A464E;
+}
+footer .footer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  footer img {
+    align-self: flex-start;
+  }
+}
+footer .footer-menu,
+footer .contact-menu {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .footer-menu,
+footer .contact-menu {
+    text-align: left;
+  }
+}
+footer .footer-menu h5,
+footer .contact-menu h5 {
+  margin-top: 0;
+}
+footer .contact-menu {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  footer .contact-menu {
+    margin-top: 0;
+  }
+}
+footer .divider {
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 1px 0 0 0;
+}
+@media (min-width: 768px) {
+  footer .divider {
+    margin-bottom: 25px;
+  }
+}
+footer .privacy-policy-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .privacy-policy-social .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social .social-icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+footer .privacy-policy-social .social-icons svg {
+  flex-basis: 30px;
+  height: 50px;
+}
+footer .privacy-policy-social .social-icons svg:nth-child(2) {
+  margin: 0 10px;
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social .social-icons {
+    margin: 0;
+  }
+}
+footer .privacy-policy-social p, footer .privacy-policy-social div {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social p:nth-child(2) {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  footer .privacy-policy-social p:nth-child(2) {
+    text-align: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
