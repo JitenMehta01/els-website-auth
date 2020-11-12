@@ -375,4 +375,26 @@ header .container .hamburgermenu svg {
   margin: 0 15px;
 }
 
+/***** client logos
+*****************************/
+.client-logos {
+  margin-top: 50px;
+  width: 100%;
+}
+.client-logos .logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space- between;
+  align-items: center;
+}
+.client-logos .logo-container img {
+  width: 50px;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .client-logos .logo-container img {
+    width: 100px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

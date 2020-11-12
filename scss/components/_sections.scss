@@ -247,4 +247,20 @@
 
 
 
+ /***** client logos
+ *****************************/
 
+ .client-logos{
+     margin-top:50px;
+     width:100%;
+     & .logo-container{
+         @include flexy($wrap:wrap, $just:space- between, $alitems:center); 
+         & img{
+             width:50px; 
+             @include mq ('tablet'){
+                 width:100px;
+             }
+             height:100%;
+         }
+     }
+ }
