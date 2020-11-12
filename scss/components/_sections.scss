@@ -8,18 +8,11 @@
     background-image: url(../img/hero-tinted.jpg);
     background-position:top center;
     height:90vh;
-    @include mq('tablet'){
-        height:80vh;
-    }
     & .container{
         text-align: center;
         @include h1;
         padding:0;
         @include flexy($dir:column,$alitems:center, $just:center);
-
-        & button{
-            margin-right:20px;
-        }
     }
 
     & .container .hero-heading{
@@ -160,6 +153,11 @@
 }
 
 #e-learning-process .container .process-icon-container{
+    & .number-point{
+        flex-basis:40px;
+        align-self: flex-start;
+        width:50px;
+    }
     @include flexy($dir:column,$alitems:center);
     & div{
         @include flexy($dir:column, $alitems:center);
