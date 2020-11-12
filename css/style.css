@@ -73,7 +73,6 @@ header {
 
 #form {
   grid-area: form;
-  background-color: chocolate;
 }
 
 footer {
@@ -402,6 +401,12 @@ header .container .hamburgermenu svg {
 #contact .container > h2 {
   margin-bottom: 50px;
 }
+@media (min-width: 768px) {
+  #contact .container > h2 {
+    font-size: 50px;
+    margin-bottom: 75px;
+  }
+}
 #contact .container .contact-info {
   display: flex;
 }
@@ -420,6 +425,35 @@ header .container .hamburgermenu svg {
 }
 #contact .container .contact-info .phone-email-container {
   margin-left: 50px;
+}
+
+/***** form
+*****************************/
+#form label {
+  color: #2A464E;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+#form textarea {
+  height: 140px;
+}
+#form input, #form textarea {
+  background-color: #FAFAFA;
+  border: none;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+#form br + input,
+#form textarea {
+  border-bottom: #707070 1px solid;
+}
+#form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #2A464E;
+  background-color: #FAFAFA;
+  border: #707070 1px solid;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

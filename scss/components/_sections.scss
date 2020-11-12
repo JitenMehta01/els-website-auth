@@ -273,6 +273,10 @@
     background-color: $background-teal;
     & .container > h2 {
         margin-bottom:50px;
+        @include mq ('tablet'){
+            font-size: 50px;
+            margin-bottom:75px;
+        }
     }
     & .container .contact-info{
         display:flex;
@@ -296,3 +300,41 @@
         }
     }
  }
+
+
+  /***** form
+ *****************************/
+
+ #form {
+     & label{
+     color:$teal;
+     font-weight:900;
+     margin-bottom:20px;
+     }
+
+     & textarea{
+         height:140px;
+     }
+     & input, textarea{
+         background-color:$field-background ;
+         border:none;
+         margin:10px 0 20px 0;
+         width:100%;
+     }
+
+     br + input,
+     textarea{
+         border-bottom:#707070 1px solid;
+     }
+
+     & button{
+         font-family:"Poppins", sans-serif;
+         font-weight:900;
+         color:$teal;
+         background-color: $field-background;
+         border: #707070 1px solid;
+         padding:10px 20px;
+     }
+ }
+
+ 
