@@ -246,7 +246,6 @@
 }
 
 
-
  /***** client logos
  *****************************/
 
@@ -254,7 +253,7 @@
      margin-top:50px;
      width:100%;
      & .logo-container{
-         @include flexy($wrap:wrap, $just:space- between, $alitems:center); 
+         @include flexy($wrap:wrap, $just:space-between, $alitems:center); 
          & img{
              width:50px; 
              @include mq ('tablet'){
@@ -263,4 +262,37 @@
              height:100%;
          }
      }
+ }
+
+ 
+
+ /***** contact info
+ *****************************/
+ 
+ #contact{
+    background-color: $background-teal;
+    & .container > h2 {
+        margin-bottom:50px;
+    }
+    & .container .contact-info{
+        display:flex;
+        & div{
+            flex:1;
+            & h4{
+                font-weight:900;
+                margin:0;
+            }
+            & p{ 
+                margin:10px 0;
+            }   
+        }
+
+        & .address h4:last-child{
+            text-decoration: underline;
+        }
+
+        & .phone-email-container{
+            margin-left:50px;
+        }
+    }
  }

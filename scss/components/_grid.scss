@@ -42,17 +42,15 @@
   
   #clients{
     grid-area: clients;
-    background-color: #8ec96d;
+
   }
   
   #testimonial{
     grid-area:testimonial;
-    background-color: skyblue;
   }
 
   #contact{
     grid-area:contact;
-    background-color:violet;
   }
   
   #form{
@@ -76,8 +74,6 @@
         "intro intro intro intro"
         "process process process process"
         "portfolio portfolio portfolio portfolio"
-        "clients clients clients clients"
-        "testimonial testimonial testimonial testimonial"
         "contact contact form form"
         "footer footer footer footer";
           

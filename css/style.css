@@ -61,17 +61,14 @@ header {
 
 #clients {
   grid-area: clients;
-  background-color: #8ec96d;
 }
 
 #testimonial {
   grid-area: testimonial;
-  background-color: skyblue;
 }
 
 #contact {
   grid-area: contact;
-  background-color: violet;
 }
 
 #form {
@@ -87,7 +84,7 @@ footer {
 @media (min-width: 1024px) {
   #main {
     grid-template-columns: 80px 2fr repeat(2, 1fr);
-    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "portfolio portfolio portfolio portfolio" "clients clients clients clients" "testimonial testimonial testimonial testimonial" "contact contact form form" "footer footer footer footer";
+    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "portfolio portfolio portfolio portfolio" "contact contact form form" "footer footer footer footer";
   }
 }
 
@@ -384,7 +381,7 @@ header .container .hamburgermenu svg {
 .client-logos .logo-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space- between;
+  justify-content: space-between;
   align-items: center;
 }
 .client-logos .logo-container img {
@@ -395,6 +392,34 @@ header .container .hamburgermenu svg {
   .client-logos .logo-container img {
     width: 100px;
   }
+}
+
+/***** contact info
+*****************************/
+#contact {
+  background-color: #0E7368;
+}
+#contact .container > h2 {
+  margin-bottom: 50px;
+}
+#contact .container .contact-info {
+  display: flex;
+}
+#contact .container .contact-info div {
+  flex: 1;
+}
+#contact .container .contact-info div h4 {
+  font-weight: 900;
+  margin: 0;
+}
+#contact .container .contact-info div p {
+  margin: 10px 0;
+}
+#contact .container .contact-info .address h4:last-child {
+  text-decoration: underline;
+}
+#contact .container .contact-info .phone-email-container {
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
