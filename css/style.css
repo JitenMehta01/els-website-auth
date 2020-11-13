@@ -148,7 +148,7 @@ header .container .hamburgermenu svg {
   background-size: cover;
   background-image: url(../img/hero-tinted.jpg);
   background-position: top center;
-  height: 90vh;
+  height: 100vh;
   /** progress bar **/
 }
 #hero-section .container {
@@ -250,7 +250,7 @@ header .container .hamburgermenu svg {
     margin: 0 25px 30px auto;
     position: fixed;
     right: 0;
-    bottom: 82px;
+    bottom: 0;
   }
   #hero-section .progress-bar p {
     font-weight: 400;
@@ -527,13 +527,13 @@ header .container .hamburgermenu svg {
 /***** client logos
 *****************************/
 .client-logos {
+  background-color: #2A464E;
   display: flex;
   margin-top: 50px;
   width: 100%;
   color: #fff;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  max-width: 1250px;
   margin: 0 auto;
   padding: 25px;
 }
@@ -563,6 +563,7 @@ header .container .hamburgermenu svg {
 .client-logos h5 {
   font-weight: 800;
   letter-spacing: 0.4em;
+  color: #fff !important;
 }
 
 /***** contact info
