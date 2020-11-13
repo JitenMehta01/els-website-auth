@@ -236,16 +236,30 @@
 
         & div{
             position: relative;
+            margin-bottom:25px;
         }
     }
     & .portfolio-icon-container img {
-        width:90%;
-        margin-bottom:25px;
+        width:100%;
         height:100%;
         @include mq ('tablet'){
             margin-bottom:0;
         }
   } & .portfolio-icon-container{
+
+    & div{
+        @include mq ('tablet'){
+            flex-basis:250px;
+        }
+
+    }
+
+    & div:nth-child(2) h2{
+        @include mq('tablet'){
+        margin:-67px 0 0 10px;
+        }
+    }
+
     & div:before{
         content: '';
         position: absolute;
@@ -255,11 +269,15 @@
         right: 0;
         z-index: 1;
         background: linear-gradient(180deg, rgba(42,70,78,0.1) 0%, rgba(8,14,16,0.5) 35%);
+        width:100%;
     }  
 
     & div h2{
         color:#fff;
         margin:-40px 0 0 10px;
+        padding-bottom:8px;
+        position: relative;
+        z-index:1;
     }
     margin-top:25px;
     @include mq ('tablet'){

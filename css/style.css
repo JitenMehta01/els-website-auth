@@ -384,10 +384,10 @@ header .container .hamburgermenu svg {
 }
 #portfolio .container .portfolio-icon-container div {
   position: relative;
+  margin-bottom: 25px;
 }
 #portfolio .container .portfolio-icon-container img {
-  width: 90%;
-  margin-bottom: 25px;
+  width: 100%;
   height: 100%;
 }
 @media (min-width: 768px) {
@@ -398,6 +398,16 @@ header .container .hamburgermenu svg {
 #portfolio .container .portfolio-icon-container {
   margin-top: 25px;
 }
+@media (min-width: 768px) {
+  #portfolio .container .portfolio-icon-container div {
+    flex-basis: 250px;
+  }
+}
+@media (min-width: 768px) {
+  #portfolio .container .portfolio-icon-container div:nth-child(2) h2 {
+    margin: -67px 0 0 10px;
+  }
+}
 #portfolio .container .portfolio-icon-container div:before {
   content: "";
   position: absolute;
@@ -407,10 +417,14 @@ header .container .hamburgermenu svg {
   right: 0;
   z-index: 1;
   background: linear-gradient(180deg, rgba(42, 70, 78, 0.1) 0%, rgba(8, 14, 16, 0.5) 35%);
+  width: 100%;
 }
 #portfolio .container .portfolio-icon-container div h2 {
   color: #fff;
   margin: -40px 0 0 10px;
+  padding-bottom: 8px;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   #portfolio .container .portfolio-icon-container {
