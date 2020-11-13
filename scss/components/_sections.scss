@@ -90,17 +90,22 @@
 
     /** progress bar **/
     .progress-bar{
-        display:none
+        display:none;
     }
     @include mq ('desktop'){
     & .progress-bar{
         @include flexy($alitems:flex-end);
         margin: 0 25px 30px auto;
+        position:fixed;
+        right:0;
+        bottom:82px;
 
         & p{
             font-weight:400;
             color:#fff;
             font-family:"Poppins", sans-serif;
+            margin-bottom:0;
+
         }
 
         & .bar{

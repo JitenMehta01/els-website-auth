@@ -248,11 +248,15 @@ header .container .hamburgermenu svg {
     display: flex;
     align-items: flex-end;
     margin: 0 25px 30px auto;
+    position: fixed;
+    right: 0;
+    bottom: 82px;
   }
   #hero-section .progress-bar p {
     font-weight: 400;
     color: #fff;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
   }
   #hero-section .progress-bar .bar {
     background-color: #8D8D8C;
