@@ -379,23 +379,45 @@ header .container .hamburgermenu svg {
     font-size: 20px;
   }
 }
-#portfolio .container .portfolio-icon-container img {
-  width: 350px;
+#portfolio .container .portfolio-icon-container {
   margin-bottom: 25px;
+}
+#portfolio .container .portfolio-icon-container div {
+  position: relative;
+}
+#portfolio .container .portfolio-icon-container img {
+  width: 90%;
+  margin-bottom: 25px;
+  height: 100%;
 }
 @media (min-width: 768px) {
   #portfolio .container .portfolio-icon-container img {
-    width: 100%;
-    padding: 20px;
+    margin-bottom: 0;
   }
 }
 #portfolio .container .portfolio-icon-container {
   margin-top: 25px;
 }
+#portfolio .container .portfolio-icon-container div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(42, 70, 78, 0.1) 0%, rgba(8, 14, 16, 0.5) 35%);
+}
+#portfolio .container .portfolio-icon-container div h2 {
+  color: #fff;
+  margin: -40px 0 0 10px;
+}
 @media (min-width: 768px) {
   #portfolio .container .portfolio-icon-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 #portfolio .container .speech-marks {
@@ -614,6 +636,11 @@ footer .privacy-policy-social {
   flex-direction: column;
   align-items: center;
 }
+footer .privacy-policy-social .footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 footer .privacy-policy-social .social-icons {
   display: flex;
   justify-content: center;
@@ -623,6 +650,7 @@ footer .privacy-policy-social .social-icons {
   footer .privacy-policy-social .social-icons {
     display: flex;
     justify-content: flex-end;
+    width: 75px;
   }
 }
 footer .privacy-policy-social .social-icons svg {
@@ -637,7 +665,7 @@ footer .privacy-policy-social .social-icons svg:nth-child(2) {
     margin: 0;
   }
 }
-footer .privacy-policy-social p, footer .privacy-policy-social div {
+footer .privacy-policy-social div {
   flex: 1;
 }
 @media (min-width: 768px) {
@@ -645,6 +673,11 @@ footer .privacy-policy-social p, footer .privacy-policy-social div {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  footer .privacy-policy-social .footer-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 @media (min-width: 768px) {

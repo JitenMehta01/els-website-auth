@@ -230,17 +230,41 @@
             font-size:20px;
         }
     }
-    & .portfolio-icon-container img {
-        width:350px;
+
+    & .portfolio-icon-container {
         margin-bottom:25px;
+
+        & div{
+            position: relative;
+        }
+    }
+    & .portfolio-icon-container img {
+        width:90%;
+        margin-bottom:25px;
+        height:100%;
         @include mq ('tablet'){
-            width:100%;
-            padding:20px;
+            margin-bottom:0;
         }
   } & .portfolio-icon-container{
+    & div:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(42,70,78,0.1) 0%, rgba(8,14,16,0.5) 35%);
+    }  
+
+    & div h2{
+        color:#fff;
+        margin:-40px 0 0 10px;
+    }
     margin-top:25px;
     @include mq ('tablet'){
-        @include flexy($dir:row)
+        width:100%;
+        @include flexy($dir:row, $just:space-between)
     }
 
   }
@@ -459,10 +483,15 @@ footer{
 
       .privacy-policy-social{
           @include flexy($dir:column, $alitems:center);
+          & .footer-link{
+              @include flexy ($dir:column, $alitems:center)
+          }
+          
           & .social-icons{
               @include flexy($just:center);
               @include mq ('tablet'){
                   @include flexy($just:flex-end);
+                  width:75px;
               }
               & svg{ 
                   flex-basis:30px; 
@@ -479,12 +508,15 @@ footer{
 
           }
 
-          & p, div{
+          & div{
               flex:1;
           }
 
           @include mq ('tablet'){
               @include flexy($dir:row, $alitems:center);
+              & .footer-link{
+                  @include flexy($just:space-between, $dir:row);
+              }
           }
 
           & p:nth-child(2) {
@@ -498,3 +530,9 @@ footer{
       }
        
 }
+
+
+
+
+
+
