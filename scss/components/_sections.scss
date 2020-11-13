@@ -34,8 +34,13 @@
 
         & .arrow-mobile{ 
             @include flexy;
-            & p:nth-child(2){
-                margin-left:auto;
+            & .slider-arrow-container{
+                @include flexy($alitems:center, $just:flex-end);
+                & svg{
+                    flex-basis:25px;
+                    height:20px;
+                    fill:#fff;
+                }
             }
         }
 
@@ -247,7 +252,7 @@
   & .speech-marks{
       & h3{
           color:$teal;
-          margin-top:30px;
+          margin-top:40px;
           @include mq('tablet'){
               font-size:30px;
           }
@@ -257,10 +262,10 @@
       @include flexy;
     
       & svg{
-          flex-basis: 550px;
           height:70px;
           @include mq ('tablet'){
             flex-basis: 250px;
+            margin-right:25px;
           }
       }
 
@@ -364,6 +369,7 @@
  *****************************/
 
  #form {
+     letter-spacing: .4em; 
      & label{
      color:$teal;
      font-weight:900;
@@ -392,6 +398,16 @@
          background-color: $field-background;
          border: #707070 1px solid;
          padding:10px 20px;
+     } 
+
+     & .form-flex{
+        @include mq ('tablet'){
+            @include flexy($just:space-between);
+            & .input-flex{
+                width:48%;
+            }
+        }
+
      }
  }
 
