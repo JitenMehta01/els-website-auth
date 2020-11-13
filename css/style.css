@@ -569,7 +569,13 @@ header .container .hamburgermenu svg {
 /***** contact info
 *****************************/
 #contact {
+  margin-top: -40px;
   background-color: #0E7368;
+}
+@media (min-width: 1024px) {
+  #contact {
+    margin-top: 0;
+  }
 }
 #contact .container > h2 {
   margin-bottom: 50px;

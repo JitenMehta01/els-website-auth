@@ -429,6 +429,10 @@
  *****************************/
  
  #contact{
+     margin-top:-40px;
+     @include mq('desktop'){
+         margin-top: 0;
+     }
     background-color: $background-teal;
     & .container > h2 {
         margin-bottom:50px;
