@@ -1,4 +1,7 @@
 header{
+    position: fixed;
+    margin:auto;
+    width:100%;
     background-color: rgba(0,0,0,0.5);
     z-index:99;
     & img{
@@ -27,7 +30,7 @@ header{
         }
     } & .container .hamburgermenu{
         width:80px;
-        height:100%;
+        height:65px;;
         background-color:$background-teal;
         @include flexy($just:center, $alitems:center)
     } 
