@@ -24,7 +24,6 @@
 p {
   font-weight: 300;
   font-size: 14px;
-  font-family: 100;
   line-height: 1.5em;
 }
 
@@ -185,15 +184,16 @@ header .container .hamburgermenu svg {
 #hero-section .container .arrow-container-mobile .arrow-mobile {
   display: flex;
 }
+#hero-section .container .arrow-container-mobile .arrow-mobile p {
+  margin-right: auto;
+}
 #hero-section .container .arrow-container-mobile .arrow-mobile .slider-arrow-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-#hero-section .container .arrow-container-mobile .arrow-mobile .slider-arrow-container svg {
-  flex-basis: 25px;
-  height: 20px;
-  fill: #fff;
+#hero-section .container .arrow-container-mobile .arrow-mobile .slider-arrow-container img {
+  width: 30px;
 }
 @media (min-width: 1024px) {
   #hero-section .container .arrow-container-mobile {
@@ -313,6 +313,7 @@ header .container .hamburgermenu svg {
   height: 300px;
   text-align: center;
   margin-bottom: 50px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #e-learning-process .container .process-icon-container div {
@@ -326,6 +327,9 @@ header .container .hamburgermenu svg {
     display: flex;
     flex-direction: row;
   }
+}
+#e-learning-process .container .process-icon-container .process-icon {
+  width: 130px;
 }
 
 @media (min-width: 1024px) {
@@ -357,6 +361,23 @@ header .container .hamburgermenu svg {
 }
 .e-learning-intro h4 {
   color: #2A464E;
+}
+
+/** individual png icons. NEEDS TO BE REPLACED WITH SVGS **/
+.process-icon-1 {
+  width: 100px;
+}
+
+.process-icon-2 {
+  width: 113px;
+}
+
+.process-icon-3 {
+  width: 209px;
+}
+
+.process-icon-4 {
+  width: 92px;
 }
 
 /***** people skill products
@@ -477,26 +498,43 @@ header .container .hamburgermenu svg {
   margin-top: 0;
 }
 #portfolio .container .slider-control {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex: 0.3;
+  display: none;
 }
-#portfolio .container .slider-control svg {
-  flex-basis: 15px;
-  height: 15px;
-}
-#portfolio .container .slider-control p {
-  margin: 0 15px;
+@media (min-width: 1024px) {
+  #portfolio .container .slider-control {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0.3;
+  }
+  #portfolio .container .slider-control svg {
+    flex-basis: 15px;
+    height: 15px;
+  }
+  #portfolio .container .slider-control p {
+    margin: 0 15px;
+  }
 }
 
 /***** client logos
 *****************************/
 .client-logos {
+  display: flex;
   margin-top: 50px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.client-logos .container {
   width: 100%;
 }
 .client-logos .logo-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -504,12 +542,20 @@ header .container .hamburgermenu svg {
 }
 .client-logos .logo-container img {
   width: 50px;
-  height: 100%;
 }
 @media (min-width: 768px) {
   .client-logos .logo-container img {
     width: 100px;
   }
+}
+@media (min-width: 1024px) {
+  .client-logos {
+    padding: 50px;
+  }
+}
+.client-logos h5 {
+  font-weight: 800;
+  letter-spacing: 0.4em;
 }
 
 /***** contact info
@@ -597,6 +643,17 @@ footer .footer-main {
   flex-direction: column;
   align-items: center;
 }
+footer .footer-main > img {
+  width: 200px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  footer .footer-main > img {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 768px) {
   footer .footer-main {
     display: flex;
@@ -604,13 +661,17 @@ footer .footer-main {
     justify-content: space-between;
   }
 }
-footer img {
-  width: 200px;
-  margin-bottom: 50px;
+footer .social-icons img {
+  width: 30px;
 }
 @media (min-width: 768px) {
-  footer img {
-    align-self: flex-start;
+  footer .social-icons img {
+    align-self: center;
+  }
+}
+@media (min-width: 768px) {
+  footer .social-icons img:nth-child(2) {
+    margin: 0 15px;
   }
 }
 footer .footer-menu,
@@ -657,8 +718,9 @@ footer .privacy-policy-social .footer-link {
 }
 footer .privacy-policy-social .social-icons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
+  justify-content: space-between;
+  width: 50%;
+  margin: 25px 0;
 }
 @media (min-width: 768px) {
   footer .privacy-policy-social .social-icons {
@@ -666,13 +728,6 @@ footer .privacy-policy-social .social-icons {
     justify-content: flex-end;
     width: 75px;
   }
-}
-footer .privacy-policy-social .social-icons svg {
-  flex-basis: 30px;
-  height: 50px;
-}
-footer .privacy-policy-social .social-icons svg:nth-child(2) {
-  margin: 0 10px;
 }
 @media (min-width: 768px) {
   footer .privacy-policy-social .social-icons {

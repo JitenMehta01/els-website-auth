@@ -33,14 +33,16 @@
     & .container .arrow-container-mobile{
 
         & .arrow-mobile{ 
+            & p {
+                margin-right:auto;
+            }
             @include flexy;
             & .slider-arrow-container{
                 @include flexy($alitems:center, $just:flex-end);
-                & svg{
-                    flex-basis:25px;
-                    height:20px;
-                    fill:#fff;
+                & img{
+                    width:30px;
                 }
+
             }
         }
 
@@ -169,6 +171,7 @@
         height:300px;
         text-align: center;
         margin-bottom:50px;
+        width:100%;
         @include mq ('tablet'){
             flex:1 70px;
             padding:0 20px;
@@ -177,6 +180,10 @@
     }
     @include mq ('tablet'){
         @include flexy($dir:row)
+    }
+
+    & .process-icon{
+        width:130px;
     }
 }
 
@@ -211,6 +218,23 @@
     }
 }
 
+/** individual png icons. NEEDS TO BE REPLACED WITH SVGS **/
+
+.process-icon-1{
+    width:100px;
+}
+
+.process-icon-2{
+    width:113px;
+}
+
+.process-icon-3{
+    width:209px;
+}
+
+.process-icon-4{
+    width:92px;
+}
 
 
 /***** people skill products
@@ -337,6 +361,9 @@
   }
 
   & .slider-control{
+      display:none;
+      @include mq ('desktop'){
+        display:block;
       @include flexy($just:flex-end, $alitems:center);
       flex:.3; 
       & svg{
@@ -346,6 +373,7 @@
       & p {  
           margin: 0 15px; 
       }
+    }
   }
 
 
@@ -356,20 +384,38 @@
  *****************************/
 
  .client-logos{
+     & .container{
+         width:100%;
+     }
+     @include flexy;
      margin-top:50px;
      width:100%;
      & .logo-container{
+         width:100%;
          @include flexy($wrap:wrap, $just:space-between, $alitems:center); 
          & img{
              width:50px; 
              @include mq ('tablet'){
                  width:100px;
              }
-             height:100%;
          }
      }
- }
 
+     color:$white;
+     font-size:1rem;
+     font-family: $font-stack-primary;
+     max-width:1250px;
+     margin: 0 auto;
+     padding:25px;
+     @include mq('desktop'){
+         padding:50px;
+     }
+     & h5 {
+       font-weight:800; 
+       letter-spacing: .4em;
+     }
+ }
+ 
  
 
  /***** contact info
@@ -458,15 +504,29 @@
  *****************************/
 footer{
     & .footer-main{
+        & > img{
+            width:200px;
+            align-self: center;
+            margin-bottom:25px;
+            @include mq('tablet'){
+                align-self: flex-start;
+                margin-bottom: 0;
+            }
+        }
         @include flexy($dir:column,$alitems:center);
         @include mq ('tablet'){
             @include flexy($dir:row, $just:space-between);
         }
-    } & img{
-        width:200px;
-        margin-bottom:50px;
+    } & .social-icons img{
+        width:30px;
         @include mq ('tablet'){
-            align-self: flex-start;
+            align-self: center;
+        }
+    }
+
+    .social-icons img:nth-child(2){
+        @include mq('tablet'){
+            margin: 0 15px;
         }
     }
     background-color:$teal;
@@ -506,19 +566,15 @@ footer{
           }
           
           & .social-icons{
-              @include flexy($just:center);
+              @include flexy($just:space-between);
+              width:50%;
+
               @include mq ('tablet'){
                   @include flexy($just:flex-end);
                   width:75px;
+
               }
-              & svg{ 
-                  flex-basis:30px; 
-                  height:50px;
-              }
-              & svg:nth-child(2){
-                  margin: 0 10px; 
-              }
-              margin-bottom:25px;
+              margin:25px 0;
 
               @include mq ('tablet'){
                   margin: 0;
