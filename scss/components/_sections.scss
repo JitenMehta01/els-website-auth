@@ -291,6 +291,7 @@
     & p {
         @include mq('desktop'){
             font-size:20px;
+            width:75%;
         }
     }
 

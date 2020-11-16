@@ -453,6 +453,7 @@ header .container .hamburgermenu svg {
 @media (min-width: 1024px) {
   #portfolio .container p {
     font-size: 20px;
+    width: 75%;
   }
 }
 #portfolio .container .portfolio-icon-container {
