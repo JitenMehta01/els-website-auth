@@ -91,11 +91,16 @@ align-items: $alitems;
     }
    }
   
-  
+
+   @else if $breakpoint == 'desktop'{
+    @media (min-width:$breakpoint-desktop){
+      @content;
+    }
+  }  
 
   
-    @else if $breakpoint == 'desktop'{
-      @media (min-width:$breakpoint-desktop){
+    @else if $breakpoint == 'large-screen'{
+      @media (min-width:$breakpoint-large-screen){
         @content;
       }
     }
