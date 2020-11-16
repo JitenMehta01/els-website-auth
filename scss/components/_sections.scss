@@ -283,6 +283,8 @@
 
     }
 
+    
+
     & div:nth-child(2) h2{
         @include mq('tablet'){
         margin:-67px 0 0 10px;
@@ -333,7 +335,7 @@
 
       @include flexy;
     
-      & svg{
+      & img{
           height:70px;
           @include mq ('tablet'){
             flex-basis: 250px;

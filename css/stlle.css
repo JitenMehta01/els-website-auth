@@ -432,7 +432,8 @@ header .container .hamburgermenu svg {
   }
 }
 @media (min-width: 768px) {
-  #portfolio .container .portfolio-icon-container div:nth-child(2) h2 {
+  #portfolio .container .portfolio-icon-container div:nth-child(2) h2,
+#portfolio .container .portfolio-icon-container div:nth-child(4) h2 {
     margin: -67px 0 0 10px;
   }
 }
@@ -447,10 +448,10 @@ header .container .hamburgermenu svg {
   background: linear-gradient(180deg, rgba(42, 70, 78, 0.1) 0%, rgba(8, 14, 16, 0.5) 35%);
   width: 100%;
 }
-#portfolio .container .portfolio-icon-container div h2 {
+#portfolio .container .portfolio-icon-container div .div-overflow {
   color: #fff;
-  margin: -40px 0 0 10px;
-  padding-bottom: 8px;
+  margin: -135px 0 0 0px;
+  padding: 0 0 8px 10px;
   position: relative;
   z-index: 1;
 }
@@ -474,11 +475,11 @@ header .container .hamburgermenu svg {
     font-size: 30px;
   }
 }
-#portfolio .container .speech-marks img {
+#portfolio .container .speech-marks svg {
   height: 70px;
 }
 @media (min-width: 768px) {
-  #portfolio .container .speech-marks img {
+  #portfolio .container .speech-marks svg {
     flex-basis: 250px;
     margin-right: 25px;
   }
@@ -774,4 +775,4 @@ footer .privacy-policy-social div {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stlle.css.map */
