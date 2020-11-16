@@ -151,18 +151,60 @@
     color:$teal;
 }
 
+#e-learning-intro .container{
 
-
-#e-learning-intro .container img{
-    width:100%;
-    @include mq ('desktop'){
-        width:500px;
+    & > h5 + h2{
+        @include mq ('desktop'){
+            font-size:50px;
+        }
     }
-}
 
-#e-learning-intro .container > h5  h2, 
-{
-    text-align:center;
+    & > h5 + h2, 
+    & h5{
+        @include mq ('desktop'){
+            text-align: center;
+            }
+    }
+    
+    & h4{
+        color:$teal; 
+    }
+
+    /* e-learning-flexy */
+
+    & div > h2 {
+        margin-top:0;
+        @include mq ('desktop'){
+            font-size:30px;
+            margin-top:25px;
+        }
+    }
+
+    & .e-learning-flexy{
+        @include flexy($dir:column);
+    & img {
+    width:70%;
+    align-self:center;
+    margin-top:25px;
+    @include mq ('desktop'){ 
+        width:500px;
+        margin-right:25px;
+        
+    }
+    }
+
+    @include mq ('desktop'){
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+        & > div {
+            width:60%;
+        }
+    }
+
+
+    }
+
 }
 
 
@@ -219,43 +261,8 @@
     }
 }
 
-.e-learning-intro-mobile{
-    @include mq('desktop'){
-        display:none;
-    }
-}
 
-.e-learning-intro{
-    display:none;
-    @include mq('desktop'){
-        display:block;
-    }
-    & .container > div {
-        @include flexy; 
-        margin-top:50px;
-        & img{
-            width:500px;
-            & + div > h2{
-                font-size:30px;;
-            }
-        }
-    }
 
-    & .container h5 + h2, 
-    & .container h5 {
-        @include mq ('desktop'){
-        text-align: center;
-        }
-    }
-
-    & h2{
-        font-size:50px;
-    }
-    
-    & h4{
-        color:$teal; 
-    }
-}
 
 /** individual png icons. NEEDS TO BE REPLACED WITH SVGS **/
 
@@ -279,161 +286,180 @@
 /***** people skill products
 *****************************/
 
-#portfolio .container h5, 
-#portfolio .container p{
-    color:$teal;
-    text-align: center;
+#our-people-skill-products .container{
+    @include mq ('tablet'){
+        @include flexy($dir:column,$alitems:center); 
+    }
 
-}
+    & h5, 
+    & h5 + p{
+        color:$teal;
+        text-align: center;
+    }
 
-#portfolio .container {
-    @include flexy($dir:column, $alitems:center);
-    & p {
-        @include mq('desktop'){
-            font-size:20px;
+    & h5 + p{
+        @include mq ('desktop'){
             width:75%;
+            font-size:20px;
+            text-align: center;
         }
     }
 
-    & .portfolio-icon-container {
-        margin-bottom:25px;
-        @include mq ('desktop'){
-            margin: 0 -1px 25px -5px;
+    & .skill-container{
+        margin: 25px 0;
+
+        /** targetst teleconfrence heading only **/
+
+        & .skill-image-container:nth-child(2) h2 {
+            margin:-40px 0 0 10px;
+
+            @include mq ('tablet'){
+                margin:-67px 0 0 10px;
+            }
+
+            @include mq('large-screen'){
+                margin:-40px 0 0 10px;
+                }
         }
 
-        & div{
+        /** targetst teleconfrence heading only END **/
+
+        & .skill-image-container{
             position: relative;
             margin-bottom:25px;
+            & img {
+                width:100%;
+            }
+
+            & h2 {
+                color:#fff;
+                margin:-40px 0 0 10px;
+                padding-bottom:8px;
+                position: relative;
+                z-index:1;
+            }
+
             @include mq ('desktop'){
-                margin: 0 5px 25px 5px;
+                margin:25px 5px 25px 5px;
             }
+
         }
 
-    }
-    & .portfolio-icon-container img {
-        width:100%;
-        height:100%;
+        
+        
+
+        .skill-image-container::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(42,70,78,0.1) 0%, rgba(8,14,16,0.5) 35%); 
+            width:100%;
+        }
+
+        /** tablet / desktop for skill container**/
         @include mq ('tablet'){
-            margin-bottom:0;
-        }
-  } & .portfolio-icon-container{
-
-
-    
-
-    & div:nth-child(2) h2{
-        @include mq('tablet'){
-        margin:-67px 0 0 10px; 
+            @include flexy($just:space-between)
         }
 
-        @include mq('large-screen'){
-            margin:-40px 0 0 10px;
-            }
+        @include mq ('desktop'){
+            margin:0 0px 25px -5px;
+        }
+
     }
-
-
-
-    & div:before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        background: linear-gradient(180deg, rgba(42,70,78,0.1) 0%, rgba(8,14,16,0.5) 35%);
-        width:100%;
-    }  
-
-    & div h2{
-        color:#fff;
-        margin:-40px 0 0 10px;
-        padding-bottom:8px;
-        position: relative;
-        z-index:1;
-    }
-    margin-top:25px;
-    @include mq ('tablet'){
-        width:100%;
-        @include flexy($dir:row, $just:space-between)
-    }
-
-  }
-
+}
 
  /***** testimonial
  *****************************/
   
+#tesimonial .container{
+    padding-top:0;
+    & .speech-marks{
+        @include flexy;
+        & h3{
+            margin-top:40px;
+            color:#2A464E;
+            @include mq ('tablet'){
+                font-size:30px;
+            }
+            @include mq ('desktop'){
+                text-align: center;
 
-  & .speech-marks{
-      & h3{
-          color:$teal;
-          margin-top:40px;
-          @include mq('tablet'){
-              font-size:30px;
-          }
-          
-      }
-
-      @include flexy;
-    
-      & img{
-          height:70px;
-          @include mq ('tablet'){
-            flex-basis: 250px;
-            margin-right:25px;
-          }
-      }
-
-      
-  }
-
-  & .testimonial-slider{
-      @include flexy($alitems:center);
-      margin-top:25px;
-      width:100%;
-
-      & .testimonial-profile img {
-          margin-right:10px;
-          width:75px;
-      }
-      & .testimonial-profile{
-          @include flexy($alitems:flex-start);
-          flex:1;
-      } & .testimonial-profile-text h3
-      {
-        margin-bottom:0;
-        color:$teal;
-      }
-      & .testimonial-profile-text p{
-          margin-top:0;
-      }
-  }
-
-  & .slider-control{
-      display:none;
-      @include mq ('desktop'){
-        display:block;
-      @include flexy($just:flex-end, $alitems:center);
-      flex:.3; 
-      & svg{
-          flex-basis: 15px;
-          height:15px;
-      }
-      & p {  
-          margin: 0 15px; 
-      }
+            }
+        }
+        & img{
+            height:70px;
+            @include mq ('tablet'){
+                flex-basis:250px;
+                margin-right:25px;
+            }
+        }
     }
-  }
 
+    & .testimonial-slider{
+        @include flexy($alitems:center);
+        margin-top:25px;
+        width:100%;
 
+        & .testimonial-profile{
+            @include mq ('desktop'){
+                justify-content: center;
+            }
+            @include flexy($alitems:flex-start);
+            flex:1;
+            
+
+            & img{
+                margin-right:10px;
+                width:75px;
+                @include mq ('desktop'){
+                    margin-left:7%;
+                }
+            }
+
+            & .testimonial-profile-text{
+                & h3{
+                    margin-bottom:0;
+                    color:$teal;
+                }
+
+                & p{
+                    color:$teal;
+                    margin-top:0;
+                }
+            }
+        }
+
+        & .slider-control{
+            display:none;
+            @include mq ('desktop'){
+                @include flexy($just:flex-end, $alitems:center);
+                width:120px;
+
+                & svg{
+                    flex-basis:15px;
+                    height:15px;
+                }
+    
+                & p{
+                    margin: 0 15px;
+                    font-size:20px;
+                    color:$teal;
+                }
+            }
+            }
+
+    }
 }
 
 
  /***** client logos
  *****************************/
 
- .client-logos{ 
+ #client-logos{ 
     background-color: #FAFAFA;
      & .container{
          width:100%;
@@ -464,6 +490,8 @@
      & h5 {
        font-weight:800; 
        letter-spacing: .4em;
+       color:$teal;
+       text-align: center;
      }
  }
  
@@ -663,9 +691,3 @@ footer{
               }
        
 }
-
-
-
-
-
-

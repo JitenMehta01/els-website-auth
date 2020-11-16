@@ -9,9 +9,9 @@
     "hero"
     "intro"
     "process"
-    "portfolio"
-    "clients"
-    "testimonial"
+    "skill-products"
+    "tesimonial"
+    "client-logos"
     "contact"
     "form"
     "footer";
@@ -36,17 +36,17 @@
     grid-area: process;
   }
   
-  #portfolio{
-    grid-area:portfolio;
+  #our-people-skill-products{
+    grid-area:skill-products;
   }
   
-  #clients{
-    grid-area: clients;
+  #tesimonial{
+    grid-area: tesimonial;
 
   }
   
-  #testimonial{
-    grid-area:testimonial;
+  #client-logos{
+    grid-area:client-logos;
   }
 
   #contact{
@@ -71,8 +71,10 @@
         "hero hero hero hero"
         "intro intro intro intro"
         "process process process process"
-        "portfolio portfolio portfolio portfolio"
-        "contact contact form form"
+        "skill-products skill-products skill-products skill-products"
+        "tesimonial tesimonial tesimonial tesimonial"
+        "client-logos client-logos client-logos client-logos"
+        "contact contact form form "        
         "footer footer footer footer";
           
     }

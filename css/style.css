@@ -46,7 +46,7 @@ button:focus {
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(20px, auto);
   grid-template-rows: repeat(1, 70px);
-  grid-template-areas: "header" "hero" "intro" "process" "portfolio" "clients" "testimonial" "contact" "form" "footer";
+  grid-template-areas: "header" "hero" "intro" "process" "skill-products" "tesimonial" "client-logos" "contact" "form" "footer";
 }
 
 header {
@@ -65,16 +65,16 @@ header {
   grid-area: process;
 }
 
-#portfolio {
-  grid-area: portfolio;
+#our-people-skill-products {
+  grid-area: skill-products;
 }
 
-#clients {
-  grid-area: clients;
+#tesimonial {
+  grid-area: tesimonial;
 }
 
-#testimonial {
-  grid-area: testimonial;
+#client-logos {
+  grid-area: client-logos;
 }
 
 #contact {
@@ -92,7 +92,7 @@ footer {
 @media (min-width: 1024px) {
   #main {
     grid-template-columns: 80px 2fr repeat(2, 1fr);
-    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "portfolio portfolio portfolio portfolio" "contact contact form form" "footer footer footer footer";
+    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "skill-products skill-products skill-products skill-products" "tesimonial tesimonial tesimonial tesimonial" "client-logos client-logos client-logos client-logos" "contact contact form form " "footer footer footer footer";
   }
 }
 
@@ -304,17 +304,54 @@ header .container .hamburgermenu svg {
   color: #2A464E;
 }
 
-#e-learning-intro .container img {
-  width: 100%;
+#e-learning-intro .container {
+  /* e-learning-flexy */
 }
 @media (min-width: 1024px) {
-  #e-learning-intro .container img {
-    width: 500px;
+  #e-learning-intro .container > h5 + h2 {
+    font-size: 50px;
   }
 }
-
-#e-learning-intro .container > h5 h2 {
-  text-align: center;
+@media (min-width: 1024px) {
+  #e-learning-intro .container > h5 + h2, #e-learning-intro .container h5 {
+    text-align: center;
+  }
+}
+#e-learning-intro .container h4 {
+  color: #2A464E;
+}
+#e-learning-intro .container div > h2 {
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  #e-learning-intro .container div > h2 {
+    font-size: 30px;
+    margin-top: 25px;
+  }
+}
+#e-learning-intro .container .e-learning-flexy {
+  display: flex;
+  flex-direction: column;
+}
+#e-learning-intro .container .e-learning-flexy img {
+  width: 70%;
+  align-self: center;
+  margin-top: 25px;
+}
+@media (min-width: 1024px) {
+  #e-learning-intro .container .e-learning-flexy img {
+    width: 500px;
+    margin-right: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  #e-learning-intro .container .e-learning-flexy {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  #e-learning-intro .container .e-learning-flexy > div {
+    width: 60%;
+  }
 }
 
 /***** e-learning process
@@ -382,42 +419,6 @@ header .container .hamburgermenu svg {
   width: 130px;
 }
 
-@media (min-width: 1024px) {
-  .e-learning-intro-mobile {
-    display: none;
-  }
-}
-
-.e-learning-intro {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .e-learning-intro {
-    display: block;
-  }
-}
-.e-learning-intro .container > div {
-  display: flex;
-  margin-top: 50px;
-}
-.e-learning-intro .container > div img {
-  width: 500px;
-}
-.e-learning-intro .container > div img + div > h2 {
-  font-size: 30px;
-}
-@media (min-width: 1024px) {
-  .e-learning-intro .container h5 + h2, .e-learning-intro .container h5 {
-    text-align: center;
-  }
-}
-.e-learning-intro h2 {
-  font-size: 50px;
-}
-.e-learning-intro h4 {
-  color: #2A464E;
-}
-
 /** individual png icons. NEEDS TO BE REPLACED WITH SVGS **/
 .process-icon-1 {
   width: 100px;
@@ -437,65 +438,63 @@ header .container .hamburgermenu svg {
 
 /***** people skill products
 *****************************/
-#portfolio .container h5,
-#portfolio .container p {
+@media (min-width: 768px) {
+  #our-people-skill-products .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#our-people-skill-products .container h5, #our-people-skill-products .container h5 + p {
   color: #2A464E;
   text-align: center;
 }
-
-#portfolio .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /***** testimonial
-  *****************************/
-}
 @media (min-width: 1024px) {
-  #portfolio .container p {
-    font-size: 20px;
+  #our-people-skill-products .container h5 + p {
     width: 75%;
+    font-size: 20px;
+    text-align: center;
   }
 }
-#portfolio .container .portfolio-icon-container {
-  margin-bottom: 25px;
+#our-people-skill-products .container .skill-container {
+  margin: 25px 0;
+  /** targetst teleconfrence heading only **/
+  /** targetst teleconfrence heading only END **/
+  /** tablet / desktop for skill container**/
 }
-@media (min-width: 1024px) {
-  #portfolio .container .portfolio-icon-container {
-    margin: 0 -1px 25px -5px;
-  }
-}
-#portfolio .container .portfolio-icon-container div {
-  position: relative;
-  margin-bottom: 25px;
-}
-@media (min-width: 1024px) {
-  #portfolio .container .portfolio-icon-container div {
-    margin: 0 5px 25px 5px;
-  }
-}
-#portfolio .container .portfolio-icon-container img {
-  width: 100%;
-  height: 100%;
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
+  margin: -40px 0 0 10px;
 }
 @media (min-width: 768px) {
-  #portfolio .container .portfolio-icon-container img {
-    margin-bottom: 0;
-  }
-}
-#portfolio .container .portfolio-icon-container {
-  margin-top: 25px;
-}
-@media (min-width: 768px) {
-  #portfolio .container .portfolio-icon-container div:nth-child(2) h2 {
+  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
     margin: -67px 0 0 10px;
   }
 }
 @media (min-width: 1295px) {
-  #portfolio .container .portfolio-icon-container div:nth-child(2) h2 {
+  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
     margin: -40px 0 0 10px;
   }
 }
-#portfolio .container .portfolio-icon-container div:before {
+#our-people-skill-products .container .skill-container .skill-image-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+#our-people-skill-products .container .skill-container .skill-image-container img {
+  width: 100%;
+}
+#our-people-skill-products .container .skill-container .skill-image-container h2 {
+  color: #fff;
+  margin: -40px 0 0 10px;
+  padding-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container {
+    margin: 25px 5px 25px 5px;
+  }
+}
+#our-people-skill-products .container .skill-container .skill-image-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -506,87 +505,106 @@ header .container .hamburgermenu svg {
   background: linear-gradient(180deg, rgba(42, 70, 78, 0.1) 0%, rgba(8, 14, 16, 0.5) 35%);
   width: 100%;
 }
-#portfolio .container .portfolio-icon-container div h2 {
-  color: #fff;
-  margin: -40px 0 0 10px;
-  padding-bottom: 8px;
-  position: relative;
-  z-index: 1;
-}
 @media (min-width: 768px) {
-  #portfolio .container .portfolio-icon-container {
-    width: 100%;
+  #our-people-skill-products .container .skill-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
-#portfolio .container .speech-marks {
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container {
+    margin: 0 0px 25px -5px;
+  }
+}
+
+/***** testimonial
+*****************************/
+#tesimonial .container {
+  padding-top: 0;
+}
+#tesimonial .container .speech-marks {
   display: flex;
 }
-#portfolio .container .speech-marks h3 {
-  color: #2A464E;
+#tesimonial .container .speech-marks h3 {
   margin-top: 40px;
+  color: #2A464E;
 }
 @media (min-width: 768px) {
-  #portfolio .container .speech-marks h3 {
+  #tesimonial .container .speech-marks h3 {
     font-size: 30px;
   }
 }
-#portfolio .container .speech-marks img {
+@media (min-width: 1024px) {
+  #tesimonial .container .speech-marks h3 {
+    text-align: center;
+  }
+}
+#tesimonial .container .speech-marks img {
   height: 70px;
 }
 @media (min-width: 768px) {
-  #portfolio .container .speech-marks img {
+  #tesimonial .container .speech-marks img {
     flex-basis: 250px;
     margin-right: 25px;
   }
 }
-#portfolio .container .testimonial-slider {
+#tesimonial .container .testimonial-slider {
   display: flex;
   align-items: center;
   margin-top: 25px;
   width: 100%;
 }
-#portfolio .container .testimonial-slider .testimonial-profile img {
-  margin-right: 10px;
-  width: 75px;
-}
-#portfolio .container .testimonial-slider .testimonial-profile {
+#tesimonial .container .testimonial-slider .testimonial-profile {
   display: flex;
   align-items: flex-start;
   flex: 1;
 }
-#portfolio .container .testimonial-slider .testimonial-profile-text h3 {
+@media (min-width: 1024px) {
+  #tesimonial .container .testimonial-slider .testimonial-profile {
+    justify-content: center;
+  }
+}
+#tesimonial .container .testimonial-slider .testimonial-profile img {
+  margin-right: 10px;
+  width: 75px;
+}
+@media (min-width: 1024px) {
+  #tesimonial .container .testimonial-slider .testimonial-profile img {
+    margin-left: 7%;
+  }
+}
+#tesimonial .container .testimonial-slider .testimonial-profile .testimonial-profile-text h3 {
   margin-bottom: 0;
   color: #2A464E;
 }
-#portfolio .container .testimonial-slider .testimonial-profile-text p {
+#tesimonial .container .testimonial-slider .testimonial-profile .testimonial-profile-text p {
+  color: #2A464E;
   margin-top: 0;
 }
-#portfolio .container .slider-control {
+#tesimonial .container .testimonial-slider .slider-control {
   display: none;
 }
 @media (min-width: 1024px) {
-  #portfolio .container .slider-control {
-    display: block;
+  #tesimonial .container .testimonial-slider .slider-control {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex: 0.3;
+    width: 120px;
   }
-  #portfolio .container .slider-control svg {
+  #tesimonial .container .testimonial-slider .slider-control svg {
     flex-basis: 15px;
     height: 15px;
   }
-  #portfolio .container .slider-control p {
+  #tesimonial .container .testimonial-slider .slider-control p {
     margin: 0 15px;
+    font-size: 20px;
+    color: #2A464E;
   }
 }
 
 /***** client logos
 *****************************/
-.client-logos {
+#client-logos {
   background-color: #FAFAFA;
   display: flex;
   margin-top: 50px;
@@ -597,32 +615,34 @@ header .container .hamburgermenu svg {
   margin: 0 auto;
   padding: 25px;
 }
-.client-logos .container {
+#client-logos .container {
   width: 100%;
 }
-.client-logos .logo-container {
+#client-logos .logo-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.client-logos .logo-container img {
+#client-logos .logo-container img {
   width: 50px;
 }
 @media (min-width: 768px) {
-  .client-logos .logo-container img {
+  #client-logos .logo-container img {
     width: 100px;
   }
 }
 @media (min-width: 1024px) {
-  .client-logos {
+  #client-logos {
     padding: 50px;
   }
 }
-.client-logos h5 {
+#client-logos h5 {
   font-weight: 800;
   letter-spacing: 0.4em;
+  color: #2A464E;
+  text-align: center;
 }
 
 /***** contact info
