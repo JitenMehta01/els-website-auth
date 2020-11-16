@@ -606,12 +606,12 @@ footer{
               }
           }
 
-          & p:nth-child(2) {
+          & p {
             @include mq ('tablet'){
-                text-align: center;
+                font-size:11px;
             }
             @include mq ('desktop'){
-                text-align: initial;
+                font-size: 14px;
             }
           }
       }
