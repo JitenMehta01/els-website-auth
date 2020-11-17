@@ -1,0 +1,129 @@
+<div id="main">
+<!-- Hamburger Menu Icon -->
+  	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;"> 
+    	<symbol id="hamburger" viewBox="0 0 400 280">
+      		<path d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 245.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"/>
+    	</symbol>
+  	</svg>
+ <!-- -->
+<!-- Main header -->
+   	<header>
+       	<div class = 'container'>
+         	<img src = 'assets/img/els-logo.png'>
+            <button>Log in</button>
+            <div class = 'hamburgermenu'>
+              <svg> 
+                <use xlink:href="#hamburger" class = 'svg-icon'></use>
+              </svg>
+            </div>
+         </div>
+    </header>
+<!-- -->
+<router-outlet>
+</router-outlet>
+    <!-- Contact information -->
+        <section id = 'contact'>
+          <div class = 'container'>
+            <h2>Let's talk, we'd <br>
+              love to hear from you...
+            </h2>
+
+            <div class = 'contact-info'>
+              <div class = 'address'>
+                <h4>VISIT</h4>
+                <p>The Learning Technology Building,<br>
+                  6 Harnall Row, <br>
+                  Coventry CV1 5DR
+                </p>
+                <h4>SHOW ON MAP</h4>
+              </div>
+
+              <div class = 'phone-email-container'>
+                <div class = 'phone'>
+                  <h4>CALL US</h4>
+                  <p>(+44) 2476525550</p>
+                </div>
+
+                <div class = 'email'>
+                  <h4>EMAIL US</h4>
+                  <p>info@e-learningstudios.com</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Form -->
+        <section id = 'form'>
+          <div class = 'container'>
+            <form>
+               <div class = 'form-flex'>
+                  <div class = 'input-flex'>
+                    <label for="name">NAME*</label><br>
+                    <input type="text" id="name" name="name"><br>
+                  </div>
+                  <div class = 'input-flex'>               
+                    <label for="number">NUMBER*</label><br>
+                    <input type="text" id="number" name="number"><br>
+                </div>
+              </div>
+
+              <label for="email">EMAIL*</label><br>
+              <input type="text" id="email" name="email"><br>
+
+              <label for="email">COMPANY</label><br>
+              <input type="text" id="company" name="company"><br>
+
+              <label for="message">MESSAGE</label><br>
+              <textarea id="message" name="message"></textarea><br>
+
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div class = 'container'>
+            <div class = 'footer-main'>
+              <img src = 'assets/img/footer-logo.png'>
+
+              <div class = 'footer-menu'>
+                <h5>MENU</h5>
+                <p>Learning</p>
+                <p>Platform</p>
+                <p>Delivery</p>
+                <p>About Us</p>
+              </div>
+
+
+             <div class = 'contact-menu'>
+              <h5>CONTACT</h5>
+              <p>The Learning Technology Building,<br>
+                6 Harnall Row, <br>
+                Coventry CV1 5DR</p>
+
+              <p>info@e-learningstudios.com</p>  
+              <p>(+44) 2476525550</p>
+            </div>
+          </div>  
+          <div class = 'divider'></div>
+          
+          <div class = 'privacy-policy-social'>
+            <div class = 'footer-link'>
+              <p>&#169; 2020 E-Learning Studios</p>
+              <p>Privacy Policy</p>
+              <p>Apps Privacy Policy</p>
+            </div>
+
+            <div class = 'social-icons'>
+              <img src = 'assets/img/Icon-awesome-twitter.png'>
+              <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
+              <img src = 'assets/img/Icon-awesome-youtube.png'>
+            </div>
+          </div>
+        </div>    
+    </footer>
+</div> 
