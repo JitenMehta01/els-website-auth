@@ -46,7 +46,7 @@ button:focus {
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(20px, auto);
   grid-template-rows: repeat(1, 70px);
-  grid-template-areas: "header" "hero" "intro" "process" "skill-products" "tesimonial" "client-logos" "contact" "form" "footer";
+  grid-template-areas: "header" "hero" "intro" "process" "skill-products" "testimonial" "client-logos" "contact" "form" "footer";
 }
 
 header {
@@ -69,8 +69,8 @@ header {
   grid-area: skill-products;
 }
 
-#tesimonial {
-  grid-area: tesimonial;
+#testimonial {
+  grid-area: testimonial;
 }
 
 #client-logos {
@@ -92,7 +92,7 @@ footer {
 @media (min-width: 1024px) {
   #main {
     grid-template-columns: 80px 2fr repeat(2, 1fr);
-    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "skill-products skill-products skill-products skill-products" "tesimonial tesimonial tesimonial tesimonial" "client-logos client-logos client-logos client-logos" "contact contact form form " "footer footer footer footer";
+    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "skill-products skill-products skill-products skill-products" "testimonial testimonial testimonial testimonial" "client-logos client-logos client-logos client-logos" "contact contact form form " "footer footer footer footer";
   }
 }
 
@@ -519,83 +519,84 @@ header .container .hamburgermenu svg {
 
 /***** testimonial
 *****************************/
-#tesimonial .container {
-  padding-top: 0;
+#testimonial {
+  background-color: #F2F2F2;
 }
-#tesimonial .container .speech-marks {
+
+#testimonial .container .speech-marks {
   display: flex;
 }
-#tesimonial .container .speech-marks h3 {
+#testimonial .container .speech-marks h3 {
   margin-top: 40px;
   color: #2A464E;
 }
 @media (min-width: 768px) {
-  #tesimonial .container .speech-marks h3 {
+  #testimonial .container .speech-marks h3 {
     font-size: 30px;
   }
 }
 @media (min-width: 1024px) {
-  #tesimonial .container .speech-marks h3 {
+  #testimonial .container .speech-marks h3 {
     text-align: center;
   }
 }
-#tesimonial .container .speech-marks img {
+#testimonial .container .speech-marks img {
   height: 70px;
 }
 @media (min-width: 768px) {
-  #tesimonial .container .speech-marks img {
+  #testimonial .container .speech-marks img {
     flex-basis: 250px;
     margin-right: 25px;
   }
 }
-#tesimonial .container .testimonial-slider {
+#testimonial .container .testimonial-slider {
   display: flex;
   align-items: center;
   margin-top: 25px;
   width: 100%;
 }
-#tesimonial .container .testimonial-slider .testimonial-profile {
+#testimonial .container .testimonial-slider .testimonial-profile {
   display: flex;
   align-items: flex-start;
   flex: 1;
 }
 @media (min-width: 1024px) {
-  #tesimonial .container .testimonial-slider .testimonial-profile {
+  #testimonial .container .testimonial-slider .testimonial-profile {
     justify-content: center;
   }
 }
-#tesimonial .container .testimonial-slider .testimonial-profile img {
+#testimonial .container .testimonial-slider .testimonial-profile img {
   margin-right: 10px;
   width: 75px;
 }
 @media (min-width: 1024px) {
-  #tesimonial .container .testimonial-slider .testimonial-profile img {
+  #testimonial .container .testimonial-slider .testimonial-profile img {
     margin-left: 7%;
   }
 }
-#tesimonial .container .testimonial-slider .testimonial-profile .testimonial-profile-text h3 {
+#testimonial .container .testimonial-slider .testimonial-profile .testimonial-profile-text h3 {
   margin-bottom: 0;
   color: #2A464E;
 }
-#tesimonial .container .testimonial-slider .testimonial-profile .testimonial-profile-text p {
+#testimonial .container .testimonial-slider .testimonial-profile .testimonial-profile-text p {
   color: #2A464E;
   margin-top: 0;
 }
-#tesimonial .container .testimonial-slider .slider-control {
+#testimonial .container .testimonial-slider .slider-control {
   display: none;
 }
 @media (min-width: 1024px) {
-  #tesimonial .container .testimonial-slider .slider-control {
+  #testimonial .container .testimonial-slider .slider-control {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 120px;
   }
-  #tesimonial .container .testimonial-slider .slider-control svg {
+  #testimonial .container .testimonial-slider .slider-control svg {
     flex-basis: 15px;
     height: 15px;
   }
-  #tesimonial .container .testimonial-slider .slider-control p {
+  #testimonial .container .testimonial-slider .slider-control p {
     margin: 0 15px;
     font-size: 20px;
     color: #2A464E;

@@ -374,9 +374,10 @@
 
  /***** testimonial
  *****************************/
-  
-#tesimonial .container{
-    padding-top:0;
+#testimonial{
+    background-color: #F2F2F2;
+}
+#testimonial .container{
     & .speech-marks{
         @include flexy;
         & h3{
