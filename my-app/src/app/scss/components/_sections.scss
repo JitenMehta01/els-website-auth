@@ -5,7 +5,7 @@
     z-index:1;
     margin-top:-70px;
     background-size:cover;
-    background-image: url(../img/hero-tinted.jpg);
+    background-image: url '../img/hero-tinted.jpg';
     background-position:top center;
     height:100vh;
     & .container{
