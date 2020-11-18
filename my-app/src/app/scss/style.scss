@@ -12,6 +12,5 @@
 
 
 // components
-@import 'components/grid',
-        'components/nav',
-        'components/sections';
+@import 'my-app/src/app/layout/layout.component.scss',
+        'pages/index/index.component.scss';
