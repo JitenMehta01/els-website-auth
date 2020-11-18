@@ -1,5 +1,11 @@
+@import '../../scss/utilities/_mixins.scss';
+@import '../../scss/utilities/_variables.scss';
+
+
 /***** hero section
 *****************************/
+
+
 #hero-section{
     @include flexy;
     z-index:1;
@@ -379,7 +385,7 @@
     padding: 50px 0;
 }
 #testimonial .container{
-    & .speech-marks{
+    & .speech-marks{    
         @include flexy;
         & h3{
             margin-top:40px;
