@@ -1,4 +1,4 @@
-/***** Grid ****/
+/***** Grid for nav, and footer ****/
 #main{
     display:grid;
     grid-template-columns:1fr;
@@ -6,12 +6,7 @@
     grid-template-rows: repeat(1, 70px);
     grid-template-areas:
     "header"
-    "hero"
-    "intro"
-    "process"
-    "skill-products"
-    "testimonial"
-    "client-logos"
+    "app-index"
     "contact"
     "form"
     "footer";
@@ -20,33 +15,9 @@
   header{
     grid-area: header;
   }
-  
-  
-  #hero-section{
-    grid-area:hero;
-    
-  }
-  
-  
-  #e-learning-intro{
-    grid-area:intro;
-  }
-  
-  #e-learning-process{
-    grid-area: process;
-  }
-  
-  #our-people-skill-products{
-    grid-area:skill-products;
-  }
-  
-  #testimonial{
-    grid-area: testimonial;
 
-  }
-  
-  #client-logos{
-    grid-area:client-logos;
+  #main app-index{
+    grid-area:app-index;
   }
 
   #contact{
@@ -68,17 +39,68 @@
         grid-template-columns:80px 2fr repeat(2, 1fr);
         grid-template-areas:
         "header header header header"
-        "hero hero hero hero"
-        "intro intro intro intro"
-        "process process process process"
-        "skill-products skill-products skill-products skill-products"
-        "testimonial testimonial testimonial testimonial"
-        "client-logos client-logos client-logos client-logos"
-        "contact contact form form "        
+        "app-index app-index app-index app-index"   
+        "contact contact form form "     
         "footer footer footer footer";
           
     }
   }
+
+
+
+/***** Grid for main content ****/
+#main app-index{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-auto-rows: minmax(20px, auto);
+  grid-template-rows: repeat(1, 70px);
+  grid-template-areas:
+  "hero"
+  "intro"
+  "process"
+  "skill-products"
+  "testimonial"
+  "client-logos"
+}
+
+#hero-section{
+  grid-area: hero;
+}
+
+#e-learning-intro{
+  grid-area:intro;
+}
+
+#e-learning-process{
+  grid-area:process;
+} 
+#our-people-skill-products{
+  grid-area:skill-products;
+}
+#testimonial{
+  grid-area:testimonial;
+}
+#client-logos{
+  grid-area:client-logos;
+}
+
+
+
+
+#main app-index{
+  @include mq ('desktop'){
+      grid-template-columns:80px 2fr repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "hero hero hero hero"
+      "intro intro intro intro"
+      "process process process process"
+      "skill-products skill-products skill-products skill-products"
+      "testimonial testimonial testimonial testimonial"
+      "client-logos client-logos client-logos client-logos"
+        
+  }
+}
 
 
 

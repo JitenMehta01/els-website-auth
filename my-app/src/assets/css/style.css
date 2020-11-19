@@ -40,62 +40,9 @@ button:focus {
   outline: none;
 }
 
-/***** Grid ****/
-#main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(20px, auto);
-  grid-template-rows: repeat(1, 70px);
-  grid-template-areas: "header" "hero" "intro" "process" "skill-products" "testimonial" "client-logos" "contact" "form" "footer";
-}
-
-header {
-  grid-area: header;
-}
-
-#hero-section {
-  grid-area: hero;
-}
-
-#e-learning-intro {
-  grid-area: intro;
-}
-
-#e-learning-process {
-  grid-area: process;
-}
-
-#our-people-skill-products {
-  grid-area: skill-products;
-}
-
-#testimonial {
-  grid-area: testimonial;
-}
-
-#client-logos {
-  grid-area: client-logos;
-}
-
-#contact {
-  grid-area: contact;
-}
-
-#form {
-  grid-area: form;
-}
-
-footer {
-  grid-area: footer;
-}
-
-@media (min-width: 1024px) {
-  #main {
-    grid-template-columns: 80px 2fr repeat(2, 1fr);
-    grid-template-areas: "header header header header" "hero hero hero hero" "intro intro intro intro" "process process process process" "skill-products skill-products skill-products skill-products" "testimonial testimonial testimonial testimonial" "client-logos client-logos client-logos client-logos" "contact contact form form " "footer footer footer footer";
-  }
-}
-
+/************* 
+HEADER
+**************/
 header {
   position: fixed;
   margin: auto;
@@ -144,6 +91,179 @@ header .container .hamburgermenu svg {
   fill: #F3B82A;
 }
 
+/************* 
+FORM
+**************/
+#form {
+  letter-spacing: 0.4em;
+}
+#form label {
+  color: #2A464E;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+#form textarea {
+  height: 140px;
+}
+#form input, #form textarea {
+  background-color: #FAFAFA;
+  border: none;
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+#form br + input,
+#form textarea {
+  border-bottom: #707070 1px solid;
+}
+#form button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #2A464E;
+  background-color: #FAFAFA;
+  border: #707070 1px solid;
+  padding: 10px 20px;
+}
+@media (min-width: 768px) {
+  #form .form-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  #form .form-flex .input-flex {
+    width: 48%;
+  }
+}
+
+/************* 
+FOOTER
+**************/
+footer {
+  background-color: #2A464E;
+}
+footer .footer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-main > img {
+  width: 200px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  footer .footer-main > img {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer .social-icons img {
+  width: 30px;
+}
+@media (min-width: 768px) {
+  footer .social-icons img {
+    align-self: center;
+  }
+}
+@media (min-width: 768px) {
+  footer .social-icons img:nth-child(2) {
+    margin: 0 15px;
+  }
+}
+footer .footer-menu,
+footer .contact-menu {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .footer-menu,
+footer .contact-menu {
+    text-align: left;
+  }
+}
+footer .footer-menu h5,
+footer .contact-menu h5 {
+  margin-top: 0;
+}
+footer .contact-menu {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  footer .contact-menu {
+    margin-top: 0;
+  }
+}
+footer .divider {
+  margin-top: 25px;
+  background-color: #fff;
+  padding: 1px 0 0 0;
+}
+@media (min-width: 768px) {
+  footer .divider {
+    margin-bottom: 25px;
+  }
+}
+footer .privacy-policy-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .privacy-policy-social .footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .privacy-policy-social .social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 25px 0;
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 75px;
+  }
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social .social-icons {
+    margin: 0;
+  }
+}
+footer .privacy-policy-social div {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer .privacy-policy-social .footer-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  footer .privacy-policy-social p {
+    font-size: 11px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .privacy-policy-social p {
+    font-size: 14px;
+  }
+}
+footer .privacy-policy-social p:nth-child(1) {
+  font-weight: bold;
+}
+
 /***** hero section
 *****************************/
 #hero-section {
@@ -151,7 +271,7 @@ header .container .hamburgermenu svg {
   z-index: 1;
   margin-top: -70px;
   background-size: cover;
-  background-image: url(../img/hero-tinted.jpg);
+  background-image: url("../../../assets/img/hero-tinted.jpg");
   background-position: top center;
   height: 100vh;
   /** progress bar **/
@@ -458,8 +578,8 @@ header .container .hamburgermenu svg {
 }
 #our-people-skill-products .container .skill-container {
   margin: 25px 0;
-  /** targetst teleconfrence heading only **/
-  /** targetst teleconfrence heading only END **/
+  /** targets teleconfrence heading only **/
+  /** targets teleconfrence heading only END **/
   /** tablet / desktop for skill container**/
 }
 #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
@@ -521,6 +641,7 @@ header .container .hamburgermenu svg {
 *****************************/
 #testimonial {
   background-color: #F2F2F2;
+  padding: 50px 0;
 }
 
 #testimonial .container .speech-marks {
@@ -686,175 +807,81 @@ header .container .hamburgermenu svg {
   margin-left: 50px;
 }
 
-/***** form
-*****************************/
+/***** Grid for nav, and footer ****/
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(20px, auto);
+  grid-template-rows: repeat(1, 70px);
+  grid-template-areas: "header" "app-index" "contact" "form" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+#main app-index {
+  grid-area: app-index;
+}
+
+#contact {
+  grid-area: contact;
+}
+
 #form {
-  letter-spacing: 0.4em;
+  grid-area: form;
 }
-#form label {
-  color: #2A464E;
-  font-weight: 900;
-  margin-bottom: 20px;
+
+footer {
+  grid-area: footer;
 }
-#form textarea {
-  height: 140px;
-}
-#form input, #form textarea {
-  background-color: #FAFAFA;
-  border: none;
-  margin: 10px 0 20px 0;
-  width: 100%;
-}
-#form br + input,
-#form textarea {
-  border-bottom: #707070 1px solid;
-}
-#form button {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  color: #2A464E;
-  background-color: #FAFAFA;
-  border: #707070 1px solid;
-  padding: 10px 20px;
-}
-@media (min-width: 768px) {
-  #form .form-flex {
-    display: flex;
-    justify-content: space-between;
-  }
-  #form .form-flex .input-flex {
-    width: 48%;
+
+@media (min-width: 1024px) {
+  #main {
+    grid-template-columns: 80px 2fr repeat(2, 1fr);
+    grid-template-areas: "header header header header" "app-index app-index app-index app-index" "contact contact form form " "footer footer footer footer";
   }
 }
 
-/***** footer
-*****************************/
-footer {
-  background-color: #2A464E;
+/***** Grid for main content ****/
+#main app-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(20px, auto);
+  grid-template-rows: repeat(1, 70px);
+  grid-template-areas: "hero" "intro" "process" "skill-products" "testimonial" "client-logos";
 }
-footer .footer-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+#hero-section {
+  grid-area: hero;
 }
-footer .footer-main > img {
-  width: 200px;
-  align-self: center;
-  margin-bottom: 25px;
+
+#e-learning-intro {
+  grid-area: intro;
 }
-@media (min-width: 768px) {
-  footer .footer-main > img {
-    align-self: flex-start;
-    margin-bottom: 0;
-  }
+
+#e-learning-process {
+  grid-area: process;
 }
-@media (min-width: 768px) {
-  footer .footer-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+
+#our-people-skill-products {
+  grid-area: skill-products;
 }
-footer .social-icons img {
-  width: 30px;
+
+#testimonial {
+  grid-area: testimonial;
 }
-@media (min-width: 768px) {
-  footer .social-icons img {
-    align-self: center;
-  }
+
+#client-logos {
+  grid-area: client-logos;
 }
-@media (min-width: 768px) {
-  footer .social-icons img:nth-child(2) {
-    margin: 0 15px;
-  }
-}
-footer .footer-menu,
-footer .contact-menu {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  footer .footer-menu,
-footer .contact-menu {
-    text-align: left;
-  }
-}
-footer .footer-menu h5,
-footer .contact-menu h5 {
-  margin-top: 0;
-}
-footer .contact-menu {
-  margin-top: 25px;
-}
-@media (min-width: 768px) {
-  footer .contact-menu {
-    margin-top: 0;
-  }
-}
-footer .divider {
-  margin-top: 25px;
-  background-color: #fff;
-  padding: 1px 0 0 0;
-}
-@media (min-width: 768px) {
-  footer .divider {
-    margin-bottom: 25px;
-  }
-}
-footer .privacy-policy-social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .privacy-policy-social .footer-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .privacy-policy-social .social-icons {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: 25px 0;
-}
-@media (min-width: 768px) {
-  footer .privacy-policy-social .social-icons {
-    display: flex;
-    justify-content: flex-end;
-    width: 75px;
-  }
-}
-@media (min-width: 768px) {
-  footer .privacy-policy-social .social-icons {
-    margin: 0;
-  }
-}
-footer .privacy-policy-social div {
-  flex: 1;
-}
-@media (min-width: 768px) {
-  footer .privacy-policy-social {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  footer .privacy-policy-social .footer-link {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 768px) {
-  footer .privacy-policy-social p {
-    font-size: 11px;
-  }
-}
+
 @media (min-width: 1024px) {
-  footer .privacy-policy-social p {
-    font-size: 14px;
+  #main app-index {
+    grid-template-columns: 80px 2fr repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "hero hero hero hero" "intro intro intro intro" "process process process process" "skill-products skill-products skill-products skill-products" "testimonial testimonial testimonial testimonial" "client-logos client-logos client-logos client-logos";
   }
-}
-footer .privacy-policy-social p:nth-child(1) {
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
