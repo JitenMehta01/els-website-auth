@@ -2,6 +2,15 @@
 @import '../../scss/utilities/_variables.scss';
 
 
+ /***** app-index
+ *****************************/
+
+#main app-index{
+    padding-bottom:40px;
+    @include mq('')
+}
+
+
 /***** hero section
 *****************************/
 
@@ -382,7 +391,6 @@
  *****************************/
 #testimonial{
     background-color: #F2F2F2;
-    padding: 50px 0;
 }
 #testimonial .container{
     & .speech-marks{    
