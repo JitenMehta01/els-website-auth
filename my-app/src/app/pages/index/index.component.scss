@@ -7,7 +7,9 @@
 
 #main app-index{
     padding-bottom:40px;
-    @include mq('')
+    @include mq('desktop'){
+        padding-bottom:0;
+    }
 }
 
 
@@ -99,7 +101,7 @@
         @include mq ('desktop'){
             @include flexy($dir:row);
             align-self: flex-start;
-            width:100%;
+            width:80%;
             padding-left:5%; 
         }
         & div {
@@ -476,6 +478,7 @@
  *****************************/
 
  #client-logos{ 
+    
     background-color: #FAFAFA;
      & .container{
          width:100%;
@@ -500,9 +503,6 @@
      font-family: $font-stack-primary;
      margin: 0 auto;
      padding:25px;
-     @include mq('desktop'){
-         padding:50px;
-     }
      & h5 {
        font-weight:800; 
        letter-spacing: .4em;
