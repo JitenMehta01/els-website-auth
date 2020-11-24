@@ -23,11 +23,6 @@ export class ProgressBarComponent implements OnInit {
     if (current_height > 1) {current_height = 1};
      current_height = Math.floor(100* current_height);
     this.current_height_percentage = current_height;
-
-
-    const bar = document.querySelector('.bar-0-percent');
-    console.log(bar);
-    bar.style.height = `${current_height}%`
   }
 
 
