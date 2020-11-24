@@ -12,4 +12,12 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  progressValue = 0;
+
+
+
+  getProgressValue(v: number) {
+    this.progressValue = v;
+  }
+
 }

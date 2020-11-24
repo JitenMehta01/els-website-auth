@@ -40,7 +40,8 @@
           <!-- progress-bar -->
 
           <div class = 'progress-bar'>
-            <p><span>0</span>%</p>
+            {{progressValue}}
+            <app-progress-bar (progressValue)="getProgressValue($event)"></app-progress-bar>
             <div class ='bar'>
               <div class ='bar-0-percent'></div>
             </div>
