@@ -1,6 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
-import { fromEvent } from "rxjs";
-import { map, share, tap } from "rxjs/operators";
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-progress-bar',
@@ -9,29 +7,23 @@ import { map, share, tap } from "rxjs/operators";
 })
 export class ProgressBarComponent implements OnInit {
 
+  constructor() { }
 
-  @Output() progressValue = new EventEmitter();
-  progress$;
-
-
-
-
-  getprogressValue() {
-    this.progress$ = fromEvent(window, "scroll").pipe(
-      map(() => {
-        const winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
-        const height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-        return Math.round((winScroll / height) * 100);
-      }),
-      tap(v => this.progressValue.emit(v))
-    );
+  ngOnInit(): void {
   }
-  
-  ngOnInit() {
-    this.getprogressValue();
+  public current_height_percentage: number = 11;
+
+  @HostListener('window:scroll', ['$event'])
+  calculateScrollPercentage(event: any) {
+
+    
+
+    var current_height =(document.documentElement.scrollTop + window.innerHeight)/document.documentElement.scrollHeight;
+    
+    if (current_height > 1) {current_height = 1};
+     current_height = Math.floor(100* current_height);
+    this.current_height_percentage = current_height;
   }
+
 
 }
