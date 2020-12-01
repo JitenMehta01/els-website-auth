@@ -14,8 +14,10 @@ export class LayoutComponent {
 
   opened = false;
 
-  toggleMenu(event: Event){
-    this.opened = !this.opened;
+  openMenu(event: Event){
+    if (!this.opened) {
+      this.opened = true;
+    }
   }
 
 }
