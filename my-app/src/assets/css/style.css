@@ -268,7 +268,7 @@ ng-sidebar-container {
   height: 100vh;
 }
 
-header .hamburgermenu > ng-sidebar-container div {
+header .hamburgermenu > ng-sidebar-container .ng-sidebar__content > div {
   width: 80px;
   height: 65px;
   display: flex;
@@ -278,7 +278,7 @@ header .hamburgermenu > ng-sidebar-container div {
 header .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar {
   background-color: #2A464E;
   width: 450px;
-  padding: 2em;
+  padding: 10em 2em 2em 5em;
 }
 header ng-sidebar-container {
   left: -369px;
@@ -289,6 +289,64 @@ header .ng-sidebar__content {
 }
 header .ng-sidebar--closed {
   transform: translateX(101%) !important;
+}
+header #menu-main-links {
+  width: initial;
+  height: initial;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .main-menu-link-item {
+  width: 260px !important;
+  height: initial !important;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+header .main-menu-link-item h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0;
+}
+header .main-menu-link-item h1 + svg {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto;
+  fill: #fff !important;
+}
+header .about-us-menu-sidebar h1 {
+  font-size: 55px;
+  color: #F3B82A;
+  margin-bottom: 0;
+}
+header .about-us-menu-sidebar h4 span {
+  width: 25px;
+  display: block;
+  height: 2px;
+  background-color: #fff;
+}
+header .sidebar-submenu-links-container {
+  display: flex;
+  flex-direction: column;
+}
+header .sidebar-submenu-links-container h2 {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+header .sidebar-submenu-links-container span {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+header .sidebar-submenu-links-container .sidebar-submenu-item:nth-child(1) h2 {
+  margin-top: 10px;
+}
+header .sidebar-submenu-links-container.sidebar-submenu-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 /***** app-index

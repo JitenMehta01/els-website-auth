@@ -17,6 +17,8 @@ export class LayoutComponent {
   openMenu(event: Event){
     if (!this.opened) {
       this.opened = true;
+    } else{
+      this.opened = false;
     }
   }
 
