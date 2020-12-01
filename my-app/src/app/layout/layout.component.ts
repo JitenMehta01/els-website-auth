@@ -16,7 +16,6 @@ export class LayoutComponent {
 
   toggleMenu(event: Event){
     this.opened = !this.opened;
-    
   }
 
 }

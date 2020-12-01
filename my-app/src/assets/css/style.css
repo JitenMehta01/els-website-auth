@@ -277,8 +277,18 @@ header .hamburgermenu > ng-sidebar-container div {
 }
 header .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar {
   background-color: #2A464E;
-  width: 300px;
+  width: 450px;
   padding: 2em;
+}
+header ng-sidebar-container {
+  left: -369px;
+  width: 450px;
+}
+header .ng-sidebar__content {
+  left: 369px !important;
+}
+header .ng-sidebar--closed {
+  transform: translateX(101%) !important;
 }
 
 /***** app-index

@@ -234,5 +234,20 @@ header{
 
     }
 
+    & ng-sidebar-container{ 
+        left:-369px;
+        width:450px;
+    }
+
+    & .ng-sidebar__content{
+        left:369px!important;
+    }
+
+    & .ng-sidebar--closed{
+        transform: translateX(101%)!important;
+    }
+
 
 }
+
+

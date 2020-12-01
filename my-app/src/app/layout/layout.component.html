@@ -12,7 +12,7 @@
          	<img src = 'assets/img/els-logo.png'>
             <button>Log in</button>
 
-            <div class = 'hamburgermenu'  (click)="opened = !opened">
+            <div class = 'hamburgermenu'  (click)="toggleMenu($event)">
               <ng-sidebar-container>
                   <ng-sidebar [opened]="opened">
                     <p>Sidebar Content</p>
