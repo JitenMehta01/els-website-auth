@@ -81,9 +81,6 @@ header .container .hamburgermenu {
   width: 80px;
   height: 65px;
   background-color: #0E7368;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 header .container .hamburgermenu svg {
   width: 35px;
@@ -262,6 +259,26 @@ footer .privacy-policy-social div {
 }
 footer .privacy-policy-social p:nth-child(1) {
   font-weight: bold;
+}
+
+/************* 
+HAMBURGER MENU
+**************/
+ng-sidebar-container {
+  height: 100vh;
+}
+
+header .hamburgermenu > ng-sidebar-container div {
+  width: 80px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar {
+  background-color: #2A464E;
+  width: 300px;
+  padding: 2em;
 }
 
 /***** app-index

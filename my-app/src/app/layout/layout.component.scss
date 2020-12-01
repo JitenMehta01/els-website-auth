@@ -36,17 +36,20 @@ header{
             font-size:18px;
             }
         }
-    } & .container .hamburgermenu{
+    } & .container .hamburgermenu{ 
         width:80px;
         height:65px;;
         background-color:$background-teal;
-        @include flexy($just:center, $alitems:center)
+
+
     } 
     & .container .hamburgermenu svg{ 
         width:35px;
         height:35px;
         fill: $yellow;
     }
+
+
 }
 
 /************* 
@@ -205,4 +208,31 @@ footer{
           }
               }
        
+}
+
+/************* 
+HAMBURGER MENU
+**************/
+
+ng-sidebar-container{
+    height:100vh;
+}
+
+
+header{
+
+    & .hamburgermenu > ng-sidebar-container div{
+        width:80px;
+        height:65px;
+        @include flexy($just:center, $alitems:center)
+    }
+
+    & .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar{
+        background-color: $teal;
+        width:450px;
+        padding:2em;
+
+    }
+
+
 }

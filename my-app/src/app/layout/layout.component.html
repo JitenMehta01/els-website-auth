@@ -11,11 +11,19 @@
        	<div class = 'container'>
          	<img src = 'assets/img/els-logo.png'>
             <button>Log in</button>
-            <div class = 'hamburgermenu'>
-              <svg> 
-                <use xlink:href="#hamburger" class = 'svg-icon'></use>
-              </svg>
-            </div>
+
+            <div class = 'hamburgermenu'  (click)="toggleMenu($event.target.style.width = '300px')">
+              <ng-sidebar-container>
+                  <ng-sidebar [opened]="opened">
+                    <p>Sidebar Content</p>
+                  </ng-sidebar>
+                  <div ng-sidebar-content>
+                    <svg> 
+                      <use xlink:href="#hamburger" class = 'svg-icon'></use>
+                    </svg>
+                  </div>
+                </ng-sidebar-container> 
+              </div>
          </div>
     </header>
 <!-- -->

@@ -5,15 +5,17 @@ import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
+import { SidebarModule } from 'ng-sidebar';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(AppRoutes),
+    RouterModule.forRoot(AppRoutes), 
+    SidebarModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
