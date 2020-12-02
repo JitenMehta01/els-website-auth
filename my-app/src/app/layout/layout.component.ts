@@ -13,6 +13,8 @@ export class LayoutComponent {
   }
 
   opened = false;
+  toggle = false;
+    
 
   openMenu(event: Event){
     if (!this.opened) {
@@ -22,4 +24,13 @@ export class LayoutComponent {
     }
   }
 
+  toogleLinks(event: Event){
+    if (!this.toggle) {
+      this.toggle = true;
+    } else{
+      this.toggle = false;
+    }
+  }
+
 }
+
