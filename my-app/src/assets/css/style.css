@@ -274,11 +274,30 @@ header .hamburgermenu > ng-sidebar-container .ng-sidebar__content > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+header .sidebar-main-content {
+  padding: 5em 2em 2em 5em;
+}
+header .menu-cancel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 65px;
+  background-color: #F3B82A;
+  margin-left: auto;
+  cursor: pointer;
+}
+header .menu-cancel-container svg {
+  fill: #fff !important;
 }
 header .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar {
   background-color: #2A464E;
   width: 450px;
-  padding: 10em 2em 2em 5em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 header ng-sidebar-container {
   left: -369px;
@@ -318,13 +337,25 @@ header .main-menu-link-item h1 + svg {
 header .about-us-menu-sidebar h1 {
   font-size: 55px;
   color: #F3B82A;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 header .about-us-menu-sidebar h4 span {
   width: 25px;
   display: block;
   height: 2px;
   background-color: #fff;
+}
+header .about-us-menu-sidebar .about-us-heading {
+  display: flex;
+  align-items: center;
+}
+header .about-us-menu-sidebar .about-us-heading svg {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto;
+  fill: #F3B82A !important;
+  transform: rotate(90deg);
+  margin: 20px 0 0 20px;
 }
 header .sidebar-submenu-links-container {
   display: flex;
@@ -339,14 +370,48 @@ header .sidebar-submenu-links-container span {
   height: 2px;
   background-color: #fff;
   display: block;
+  margin-right: 10px;
 }
-header .sidebar-submenu-links-container .sidebar-submenu-item:nth-child(1) h2 {
-  margin-top: 10px;
+header .sidebar-submenu-links-container .sidebar-submenu-item h2 {
+  margin: 0;
 }
-header .sidebar-submenu-links-container.sidebar-submenu-item {
+header .sidebar-submenu-links-container .sidebar-submenu-item {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header .address h5,
+header .lets-talk h5 {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: initial;
+  color: #F3B82A;
+  margin: 0;
+}
+header .lets-talk {
+  margin-top: 0;
+}
+header .lets-talk {
+  margin-top: 20px;
+}
+header .social-icons {
+  margin: 25px 0;
+}
+@media (min-width: 768px) {
+  header .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0 0 0;
+  }
+}
+header .social-icons img {
+  width: 30px;
+  margin: 0;
+}
+header .social-icons img:nth-child(2) {
+  margin: 0 20px;
 }
 
 /***** app-index

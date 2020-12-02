@@ -18,7 +18,7 @@
 <!-- Close sidemenu icon -->    
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
-  <symbol id="sidebar-right-arrow" viewBox="0 0 512.001 512.001">  
+  <symbol id="cancel-sidemenu-icon" viewBox="0 0 512.001 512.001">  
     <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"/>
   </symbol>  
 </svg>
@@ -31,82 +31,89 @@
          	<img src = 'assets/img/els-logo.png'>
             <button>Log in</button>
 
-            <div class = 'hamburgermenu'  (click)="openMenu($event)">
+            <div class = 'hamburgermenu'>
               <ng-sidebar-container>
                   <ng-sidebar [opened]="opened">
-                    <div id = 'menu-main-links'>
-                      
-                      <div class = 'main-menu-link-item'>
-                        <h1>Learning</h1>
-                        <svg> 
-                          <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                        </svg>
-                      </div>
-
-                      <div class = 'main-menu-link-item'>
-                        <h1>Platform</h1>
-                        <svg> 
-                          <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                        </svg>
-                      </div>
-
-                      <div class = 'main-menu-link-item'>
-                        <h1>Delivery</h1>
-                        <svg> 
-                          <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                        </svg>
-                      </div>
+                    <div class = 'menu-cancel-container' (click)="openMenu($event)">
+                      <svg> 
+                        <use xlink:href="#cancel-sidemenu-icon" class = 'svg-icon'></use>
+                      </svg>
                     </div>
 
-                    <div class = 'about-us-menu-sidebar'>
-                      <div class = 'about-us-heading'>
-                        <h1>About Us</h1>
-                        <svg> 
-                          <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                        </svg>
-                      </div>
-
-                      <div class = 'sidebar-submenu-links-container'>
-
-                        <div class = 'sidebar-submenu-item'>
-                        <h2>Profiles</h2>
-                        <span></span>
+                    <div class = 'sidebar-main-content'>
+                      <div id = 'menu-main-links'>
+                        <div class = 'main-menu-link-item'>
+                          <h1>Learning</h1>
+                          <svg> 
+                            <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                          </svg>
                         </div>
 
-                        <div class = 'sidebar-submenu-item'>
-                          <h2>Careers</h2>
+                        <div class = 'main-menu-link-item'>
+                          <h1>Platform</h1>
+                          <svg> 
+                            <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                          </svg>
+                        </div>
+
+                        <div class = 'main-menu-link-item'>
+                          <h1>Delivery</h1>
+                          <svg> 
+                            <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class = 'about-us-menu-sidebar'>
+                        <div class = 'about-us-heading'>
+                          <h1>About Us</h1>
+                          <svg> 
+                            <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                          </svg>
+                        </div>
+
+                        <div class = 'sidebar-submenu-links-container'>
+
+                          <div class = 'sidebar-submenu-item'>
+                          <h2>Profiles</h2>
                           <span></span>
-                        </div>
+                          </div>
 
-                        <div class = 'sidebar-submenu-item'>
-                          <h2>Demo</h2>
-                          <span></span>
+                          <div class = 'sidebar-submenu-item'>
+                            <h2>Careers</h2>
+                            <span></span>
+                          </div>
+
+                          <div class = 'sidebar-submenu-item'>
+                            <h2>Demo</h2>
+                            <span></span>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class = 'address'>
-                      <h5>Address</h5>
-                      <p>The Learning Technology Building,<br>
-                        6 Harnall Row, Coventry CV1 5DR</p>
-                    </div>
+                      <div class = 'address'>
+                        <h5>Address</h5>
+                        <p>The Learning Technology Building,<br>
+                          6 Harnall Row, Coventry CV1 5DR</p>
+                      </div>
 
-                    <div class = 'lets-talk'>
-                      <h5>Let's Talk</h5>
-                      <p>(+44) 2476525550<br>
-                        info@e-learningstudios.com</p>
-                    </div>
+                      <div class = 'lets-talk'>
+                        <h5>Let's Talk</h5>
+                        <p>(+44) 2476525550<br>
+                          info@e-learningstudios.com</p>
+                      </div>
 
-                    <div class = 'social-icons'>
-                      <img src = 'assets/img/Icon-awesome-twitter.png'>
-                      <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
-                      <img src = 'assets/img/Icon-awesome-youtube.png'>
+                      <div class = 'social-icons'>
+                        <img src = 'assets/img/Icon-awesome-twitter.png'>
+                        <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
+                        <img src = 'assets/img/Icon-awesome-youtube.png'>
+                      </div>
                     </div>
 
 
 
                   </ng-sidebar>
-                  <div ng-sidebar-content>
+                  <div ng-sidebar-content (click)="openMenu($event)">
                     <svg> 
                       <use xlink:href="#hamburger" class = 'svg-icon'></use>
                     </svg>

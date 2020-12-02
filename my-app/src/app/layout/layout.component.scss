@@ -34,6 +34,7 @@ header{
             color:#fff;
             font-weight:600;
             font-size:18px;
+            z-index:999;
             }
         }
     } & .container .hamburgermenu{ 
@@ -224,13 +225,35 @@ header{
     & .hamburgermenu > ng-sidebar-container .ng-sidebar__content > div{
         width:80px;
         height:65px;
-        @include flexy($just:center, $alitems:center)
+        @include flexy($just:center, $alitems:center);
+        cursor:pointer;
+
+
+    }
+
+    & .sidebar-main-content{
+                padding:4em 2em 2em 5em;
+    }
+    
+    & .menu-cancel-container{
+        @include flexy($just:center, $alitems:center);
+        width: 80px;
+        height:65px;
+        background-color:$yellow;
+        margin-left:auto;
+        cursor: pointer;
+        & svg{
+            fill:#fff!important;
+        }
     }
 
     & .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar{
         background-color: $teal;
         width:450px;
-        padding:7em 2em 2em 5em;
+        @include flexy($dir:column);
+        overflow:hidden;
+        z-index:1000;
+
 
     }
 
