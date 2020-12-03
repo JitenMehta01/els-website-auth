@@ -11,7 +11,7 @@ export class ProgressBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public current_height_percentage: number = 11;
+  public current_height_percentage: number = 16;
 
   @HostListener('window:scroll', ['$event'])
   calculateScrollPercentage(event: any) {

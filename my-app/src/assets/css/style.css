@@ -319,10 +319,8 @@ header #menu-main-links {
   align-items: flex-start;
 }
 header .main-menu-link-item {
-  width: 260px !important;
   height: initial !important;
   display: flex;
-  align-items: center;
   margin-bottom: 25px;
 }
 header .main-menu-link-item h1 {
@@ -336,22 +334,17 @@ header .main-menu-link-item h1 + svg {
   margin-left: auto;
   fill: #fff !important;
 }
-header .about-us-menu-sidebar h1 {
-  font-size: 55px;
-  color: #F3B82A;
-  margin-bottom: 20px;
-}
-header .about-us-menu-sidebar h4 span {
+header .submenu-heading h4 span {
   width: 25px;
   display: block;
   height: 2px;
   background-color: #fff;
 }
-header .about-us-menu-sidebar .about-us-heading {
+header .submenu-heading .submenu-heading {
   display: flex;
   align-items: center;
 }
-header .about-us-menu-sidebar .about-us-heading svg {
+header .submenu-heading .submenu-heading svg {
   width: 20px !important;
   height: 20px !important;
   margin-left: auto;
@@ -419,15 +412,27 @@ header .social-icons img {
 header .social-icons img:nth-child(2) {
   margin: 0 20px;
 }
-header .close > svg {
+header .close svg {
   fill: #fff !important;
   transition: 0.2s all ease-out;
   transform: rotate(0deg);
 }
-header .open > svg {
+header .open svg {
   fill: #F3B82A !important;
   transform: rotate(90deg);
-  transition: 0.2s all ease-in;
+  transition: 0.1s all ease-in;
+}
+header .open h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+header .submenu-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header .submenu-heading .open_menu {
+  margin-left: auto;
 }
 
 /***** app-index

@@ -242,6 +242,7 @@ header{
         background-color:$yellow;
         margin-left:auto;
         cursor: pointer;
+        padding:15px 0;
         & svg{
             fill:#fff!important;
         }
@@ -251,7 +252,7 @@ header{
         background-color: $teal;
         width:450px;
         @include flexy($dir:column);
-        overflow:hidden;
+        overflow:auto;
         z-index:1000;
 
 
@@ -276,33 +277,29 @@ header{
         justify-content: flex-start;
         flex-direction: column;
         align-items: flex-start;
+        cursor:pointer;
+        
     }
 
     &  .main-menu-link-item{
-        width:260px!important;
         height:initial!important;
-        @include flexy($alitems:center);
+        @include flexy($dir:column);
         margin-bottom:25px;
 
-        & h1 {
+        & .open_menu {
             font-size:45px;
             font-weight:400;
             margin:0;
-            + svg{
+             svg{
                 width:20px!important;
                 height:20px!important;
                 margin-left:auto;
-                fill:#fff!important;
             }
         }
     }
 
-    & .about-us-menu-sidebar{
-        & h1 {
-            font-size:55px;
-            color:$yellow;
-            margin-bottom:20px;
-        }
+    & .submenu-heading{
+
 
         & h4{
             & span{
@@ -313,7 +310,7 @@ header{
             }
         }
 
-        & .about-us-heading{
+        & .submenu-heading{
             @include flexy($alitems:center);
             & svg {
                 width:20px!important;
@@ -352,6 +349,7 @@ header{
         top:40px;
         opacity: 0;
         transition: .2s all ease-in;
+
     }
 
     & .address h5, 
@@ -394,17 +392,35 @@ header{
 
     }
 
-    & .close > svg{
+    & .close  svg{
         fill:#fff!important;
         transition:.2s all ease-out;
         transform:rotate(0deg);
     }
 
-    & .open > svg{
+    & .open  {
+        & svg{
         fill:$yellow!important;
         transform:rotate(90deg);
         transition:.1s all ease-in;
+        }
+        & h1{
+            font-size:55px;
+            margin-bottom:20px;
+            color:$yellow;
+            font-weight:700;
+        }
     }
+
+    & .submenu-heading{
+        width:100%;
+        @include flexy($alitems:center);
+        & .open_menu{
+            margin-left:auto;
+        }
+    }
+
+
 
 }
 
