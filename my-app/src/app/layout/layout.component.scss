@@ -319,8 +319,6 @@ header{
                 width:20px!important;
                 height:20px!important;
                 margin-left:auto;
-                fill:$yellow!important;
-                transform: rotate(90deg);
                 margin: 20px 0 0 20px;
 
             }
@@ -347,6 +345,13 @@ header{
             @include flexy($dir:row-reverse, $just:flex-end, $alitems:center);
             margin-bottom:20px;
         }
+    }
+
+    &.about-us-heading + .open{
+        position: absolute;
+        top:40px;
+        opacity: 0;
+        transition: .2s all ease-in;
     }
 
     & .address h5, 
@@ -387,6 +392,18 @@ header{
     
 
 
+    }
+
+    & .close > svg{
+        fill:#fff!important;
+        transition:.2s all ease-out;
+        transform:rotate(0deg);
+    }
+
+    & .open > svg{
+        fill:$yellow!important;
+        transform:rotate(90deg);
+        transition:.1s all ease-in;
     }
 
 }

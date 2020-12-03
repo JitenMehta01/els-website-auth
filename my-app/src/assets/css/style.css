@@ -75,6 +75,7 @@ header .container button {
     color: #fff;
     font-weight: 600;
     font-size: 18px;
+    z-index: 999;
   }
 }
 header .container .hamburgermenu {
@@ -277,7 +278,7 @@ header .hamburgermenu > ng-sidebar-container .ng-sidebar__content > div {
   cursor: pointer;
 }
 header .sidebar-main-content {
-  padding: 5em 2em 2em 5em;
+  padding: 4em 2em 2em 5em;
 }
 header .menu-cancel-container {
   display: flex;
@@ -298,6 +299,7 @@ header .hamburgermenu > ng-sidebar-container ::ng-deep .ng-sidebar {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  z-index: 1000;
 }
 header ng-sidebar-container {
   left: -369px;
@@ -353,8 +355,6 @@ header .about-us-menu-sidebar .about-us-heading svg {
   width: 20px !important;
   height: 20px !important;
   margin-left: auto;
-  fill: #F3B82A !important;
-  transform: rotate(90deg);
   margin: 20px 0 0 20px;
 }
 header .sidebar-submenu-links-container {
@@ -381,6 +381,12 @@ header .sidebar-submenu-links-container .sidebar-submenu-item {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+}
+header.about-us-heading + .open {
+  position: absolute;
+  top: 40px;
+  opacity: 0;
+  transition: 0.2s all ease-in;
 }
 header .address h5,
 header .lets-talk h5 {
@@ -412,6 +418,16 @@ header .social-icons img {
 }
 header .social-icons img:nth-child(2) {
   margin: 0 20px;
+}
+header .close > svg {
+  fill: #fff !important;
+  transition: 0.2s all ease-out;
+  transform: rotate(0deg);
+}
+header .open > svg {
+  fill: #F3B82A !important;
+  transform: rotate(90deg);
+  transition: 0.2s all ease-in;
 }
 
 /***** app-index

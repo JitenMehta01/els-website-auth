@@ -14,6 +14,7 @@ export class LayoutComponent {
 
   opened = false;
   toggle = false;
+  status = false;
     
 
   openMenu(event: Event){
@@ -25,12 +26,17 @@ export class LayoutComponent {
   }
 
   toogleLinks(event: Event){
-    if (!this.toggle) {
-      this.toggle = true;
-    } else{
-      this.toggle = false;
-    }
+    setTimeout( () =>{
+      if (!this.toggle) {
+        this.toggle = true;
+        this.status = !this.status;
+      } else{
+        this.toggle = false;
+        this.status = false;
+      }
+    },100)
   }
 
 }
+
 
