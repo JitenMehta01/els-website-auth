@@ -233,6 +233,9 @@ header{
 
     & .sidebar-main-content{
                 padding:4em 2em 2em 5em;
+        @media(min-width: 300px) and (max-width: 400px){
+            padding:4em 2em 2em 2em;
+                }         
     }
     
     & .menu-cancel-container{
@@ -255,6 +258,10 @@ header{
         overflow:auto;
         z-index:1000;
 
+        @media(min-width: 300px) and (max-width: 400px){
+            position: fixed;
+            width:100%;
+        }
 
     }
 
@@ -277,7 +284,6 @@ header{
         justify-content: flex-start;
         flex-direction: column;
         align-items: flex-start;
-        cursor:pointer;
         
     }
 
@@ -327,6 +333,11 @@ header{
         h2 {
             margin-bottom:0;
             font-size: 30px;
+            cursor:pointer;
+            transition: .2s all ease-in;
+        }
+        & h2:hover{
+            color:$yellow;
         }
         & span{
             width:25px;
@@ -344,13 +355,7 @@ header{
         }
     }
 
-    &.about-us-heading + .open{
-        position: absolute;
-        top:40px;
-        opacity: 0;
-        transition: .2s all ease-in;
 
-    }
 
     & .address h5, 
       .lets-talk h5{
@@ -415,6 +420,7 @@ header{
     & .submenu-heading{
         width:100%;
         @include flexy($alitems:center);
+        cursor:pointer;
         & .open_menu{
             margin-left:auto;
         }

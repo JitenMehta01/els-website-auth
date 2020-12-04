@@ -62,7 +62,10 @@
             }
         }
 
-        width:90%;
+        width:100%;
+        @include mq ('tablet'){
+            width:90%;
+        }
         background-color:$background-teal;
         margin-top:auto;
         align-self: flex-start; 
@@ -79,7 +82,7 @@
             font-size:22px;
         }
     } & h1 {
-        margin-top:400px;
+        margin-top:320px;
         font-weight: 700;
         margin-bottom: 0;
         font-size:60px;
@@ -162,6 +165,13 @@
 
 /***** e-learning intro
 *****************************/
+#e-learning-intro{
+    margin-top:100px;
+    @include mq('tablet'){
+        margin-top:0;
+    }
+}
+
 #e-learning-intro .container h2, 
 #e-learning-intro .container h5, 
 #e-learning-intro .container p{
