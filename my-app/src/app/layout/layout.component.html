@@ -1,314 +1,315 @@
 <div id="main">
-<!-- Hamburger Menu Icon -->
-  	<svg xmlns="http://www.w3.org/2000/svg" style="display:none;"> 
-    	<symbol id="hamburger" viewBox="0 0 400 280">
-      		<path d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 245.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"/>
-    	</symbol>
-    </svg>
+  <!-- Hamburger Menu Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" style="display:none;"> 
+        <symbol id="hamburger" viewBox="0 0 400 280">
+            <path d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zM368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 245.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"/>
+        </symbol>
+      </svg>
+    
+  <!-- Sidebar right arrow Icon -->    
   
-<!-- Sidebar right arrow Icon -->    
-
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
-      <symbol id="sidebar-right-arrow" viewBox="0 0 490.661 490.661">
-        <path d="M453.352 236.091L48.019 1.424c-3.285-1.899-7.36-1.899-10.688 0a10.681 10.681 0 00-5.333 9.237v469.333c0 3.819 2.048 7.339 5.333 9.237a10.802 10.802 0 005.333 1.429c1.856 0 3.691-.469 5.355-1.429l405.333-234.667c3.285-1.92 5.312-5.44 5.312-9.237s-2.027-7.338-5.312-9.236z"/>
-      </symbol>
-    </svg>
-
-
-<!-- Close sidemenu icon -->    
-
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
-  <symbol id="cancel-sidemenu-icon" viewBox="0 0 512.001 512.001">  
-    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"/>
-  </symbol>  
-</svg>
-
+      <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <symbol id="sidebar-right-arrow" viewBox="0 0 490.661 490.661">
+          <path d="M453.352 236.091L48.019 1.424c-3.285-1.899-7.36-1.899-10.688 0a10.681 10.681 0 00-5.333 9.237v469.333c0 3.819 2.048 7.339 5.333 9.237a10.802 10.802 0 005.333 1.429c1.856 0 3.691-.469 5.355-1.429l405.333-234.667c3.285-1.92 5.312-5.44 5.312-9.237s-2.027-7.338-5.312-9.236z"/>
+        </symbol>
+      </svg>
   
- <!-- -->
-<!-- Main header -->
-   	<header>
-       	<div class = 'container'>
-         	<img src = 'assets/img/els-logo.png'>
-            <button>Log in</button>
-
-            <div class = 'hamburgermenu'>
-              <ng-sidebar-container>
-                  <ng-sidebar [opened]="opened">
-                    <div class = 'menu-cancel-container' (click)="openMenu($event)">
+  
+  <!-- Close sidemenu icon -->    
+  
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="cancel-sidemenu-icon" viewBox="0 0 512.001 512.001">  
+      <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"/>
+    </symbol>  
+  </svg>
+  
+    
+   <!-- -->
+  <!-- Main header -->
+       <header>
+           <div class = 'container'>
+             <img src = 'assets/img/els-logo.png'>
+              <button>Log in</button>
+  
+              <div class = 'hamburgermenu'>
+                <ng-sidebar-container>
+                    <ng-sidebar [opened]="opened">
+                      <div class = 'menu-cancel-container' (click)="openMenu($event)">
+                        <svg> 
+                          <use xlink:href="#cancel-sidemenu-icon" class = 'svg-icon'></use>
+                        </svg>
+                      </div>
+  
+                      <div class = 'sidebar-main-content'>
+                        <div id = 'menu-main-links'>
+                          <div class = 'main-menu-link-item'>
+                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('learning')"  [ngClass]="learning ? 'open' : 'close'">
+                              <h1>Learning</h1>
+                              <div class="open_menu">
+                                <svg> 
+                                  <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                                </svg>
+                              </div>
+                             </div> 
+  
+                             <div class = 'sidebar-submenu-links-container' *ngIf = "learning" [ngClass]="learning ? 'open' : 'close'">
+    
+                              <div class = 'sidebar-submenu-item'>
+                              <h2>People Skills</h2>
+                              <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>VR Learning</h2>
+                                <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>Serious Games</h2>
+                                <span></span>
+                              </div>
+  
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>E-learning</h2>
+                                <span></span>
+                              </div>
+  
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>Partnerships</h2>
+                                <span></span>
+                              </div>
+  
+                            </div>
+                          </div>
+  
+                          <div class = 'main-menu-link-item'>
+                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('platform')"  [ngClass]="platform ? 'open' : 'close'">
+                              <h1>Platform</h1>
+                              <div class="open_menu">
+                                <svg> 
+                                  <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                                </svg>
+                              </div>
+                             </div> 
+  
+                             <div class = 'sidebar-submenu-links-container' *ngIf = "platform" [ngClass]="platform ? 'open' : 'close'">
+    
+                              <div class = 'sidebar-submenu-item'>
+                              <h2>Monitor, Measure, Report</h2>
+                              <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>GDPR</h2>
+                                <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>LMS intergration</h2>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class = 'main-menu-link-item'>
+                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('delivery')"  [ngClass]="delivery ? 'open' : 'close'">
+                              <h1>Delivery</h1>
+                              <div class="open_menu">
+                                <svg> 
+                                  <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                                </svg>
+                              </div>
+                             </div> 
+  
+                             <div class = 'sidebar-submenu-links-container' *ngIf = "delivery" [ngClass]="delivery ? 'open' : 'close'">
+    
+                              <div class = 'sidebar-submenu-item'>
+                              <h2>Simple at Scale</h2>
+                              <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>Branded Headsets</h2>
+                                <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>FAQ's</h2>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+  
+                          <div class = 'about-us-menu-sidebar main-menu-link-item'>
+                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('aboutUs')"  [ngClass]="aboutUs ? 'open' : 'close'">
+                              <h1 >About Us</h1>
+                              <div class="open_menu">  
+                                <svg> 
+                                  <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
+                                </svg>
+                              </div>
+                            </div>
+    
+                            <div class = 'sidebar-submenu-links-container' *ngIf = "aboutUs" [ngClass]="aboutUs ? 'open' : 'close'">
+    
+                              <div class = 'sidebar-submenu-item'>
+                              <h2>Team Profiles</h2>
+                              <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>Awards</h2>
+                                <span></span>
+                              </div>
+    
+                              <div class = 'sidebar-submenu-item'>
+                                <h2>Arrange a Demo</h2>
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+  
+                        </div>
+  
+  
+                        <div class = 'address'>
+                          <h5>Address</h5>
+                          <p>The Learning Technology Building,<br>
+                            6 Harnall Row, Coventry CV1 5DR</p>
+                        </div>
+  
+                        <div class = 'lets-talk'>
+                          <h5>Let's Talk</h5>
+                          <p>(+44) 2476525550<br>
+                            info@e-learningstudios.com</p>
+                        </div>
+  
+                        <div class = 'social-icons'>
+                          <img src = 'assets/img/Icon-awesome-twitter.png'>
+                          <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
+                          <img src = 'assets/img/Icon-awesome-youtube.png'>
+                        </div>
+                      </div>
+  
+  
+  
+                    </ng-sidebar>
+                    <div ng-sidebar-content (click)="openMenu($event)">
                       <svg> 
-                        <use xlink:href="#cancel-sidemenu-icon" class = 'svg-icon'></use>
+                        <use xlink:href="#hamburger" class = 'svg-icon'></use>
                       </svg>
                     </div>
-
-                    <div class = 'sidebar-main-content'>
-                      <div id = 'menu-main-links'>
-                        <div class = 'main-menu-link-item'>
-                          <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks4($event)"  [ngClass]="status3 ? 'open' : 'close'">
-                            <h1>Learning</h1>
-                            <div class="open_menu">
-                              <svg> 
-                                <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                              </svg>
-                            </div>
-                           </div> 
-
-                           <div class = 'sidebar-submenu-links-container' *ngIf = "toggle3" [ngClass]="status3 ? 'open' : 'close'">
+                  </ng-sidebar-container> 
+                </div>
+           </div>
+      </header>
+  <!-- -->
+  <router-outlet>
+  </router-outlet>
+      <!-- Contact information -->
+          <section id = 'contact'>
+            <div class = 'container'>
+              <h2>Let's talk, we'd <br>
+                love to hear from you...
+              </h2>
   
-                            <div class = 'sidebar-submenu-item'>
-                            <h2>People Skills</h2>
-                            <span></span>
-                            </div>
+              <div class = 'contact-info'>
+                <div class = 'address'>
+                  <h4>VISIT</h4>
+                  <p>The Learning Technology Building,<br>
+                    6 Harnall Row, <br>
+                    Coventry CV1 5DR
+                  </p>
+                  <h4>SHOW ON MAP</h4>
+                </div>
   
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>VR Learning</h2>
-                              <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>Serious Games</h2>
-                              <span></span>
-                            </div>
-
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>E-learning</h2>
-                              <span></span>
-                            </div>
-
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>Partnerships</h2>
-                              <span></span>
-                            </div>
-
-                          </div>
-                        </div>
-
-                        <div class = 'main-menu-link-item'>
-                          <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks3($event)"  [ngClass]="status2 ? 'open' : 'close'">
-                            <h1>Platform</h1>
-                            <div class="open_menu">
-                              <svg> 
-                                <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                              </svg>
-                            </div>
-                           </div> 
-
-                           <div class = 'sidebar-submenu-links-container' *ngIf = "toggle2" [ngClass]="status2 ? 'open' : 'close'">
-  
-                            <div class = 'sidebar-submenu-item'>
-                            <h2>Monitor, Measure, Report</h2>
-                            <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>GDPR</h2>
-                              <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>LMS intergration</h2>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class = 'main-menu-link-item'>
-                          <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks1($event)"  [ngClass]="status ? 'open' : 'close'">
-                            <h1>Delivery</h1>
-                            <div class="open_menu">
-                              <svg> 
-                                <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                              </svg>
-                            </div>
-                           </div> 
-
-                           <div class = 'sidebar-submenu-links-container' *ngIf = "toggle" [ngClass]="status ? 'open' : 'close'">
-  
-                            <div class = 'sidebar-submenu-item'>
-                            <h2>Simple at Scale</h2>
-                            <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>Branded Headsets</h2>
-                              <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>FAQ's</h2>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class = 'about-us-menu-sidebar main-menu-link-item'>
-                          <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks2($event)"  [ngClass]="status1 ? 'open' : 'close'">
-                            <h1 >About Us</h1>
-                            <div class="open_menu">  
-                              <svg> 
-                                <use xlink:href="#sidebar-right-arrow" class = 'svg-icon'></use>
-                              </svg>
-                            </div>
-                          </div>
-  
-                          <div class = 'sidebar-submenu-links-container' *ngIf = "toggle1" [ngClass]="status1 ? 'open' : 'close'">
-  
-                            <div class = 'sidebar-submenu-item'>
-                            <h2>Team Profiles</h2>
-                            <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>Awards</h2>
-                              <span></span>
-                            </div>
-  
-                            <div class = 'sidebar-submenu-item'>
-                              <h2>Arrange a Demo</h2>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-
-
-                      <div class = 'address'>
-                        <h5>Address</h5>
-                        <p>The Learning Technology Building,<br>
-                          6 Harnall Row, Coventry CV1 5DR</p>
-                      </div>
-
-                      <div class = 'lets-talk'>
-                        <h5>Let's Talk</h5>
-                        <p>(+44) 2476525550<br>
-                          info@e-learningstudios.com</p>
-                      </div>
-
-                      <div class = 'social-icons'>
-                        <img src = 'assets/img/Icon-awesome-twitter.png'>
-                        <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
-                        <img src = 'assets/img/Icon-awesome-youtube.png'>
-                      </div>
-                    </div>
-
-
-
-                  </ng-sidebar>
-                  <div ng-sidebar-content (click)="openMenu($event)">
-                    <svg> 
-                      <use xlink:href="#hamburger" class = 'svg-icon'></use>
-                    </svg>
+                <div class = 'phone-email-container'>
+                  <div class = 'phone'>
+                    <h4>CALL US</h4>
+                    <p>(+44) 2476525550</p>
                   </div>
-                </ng-sidebar-container> 
+  
+                  <div class = 'email'>
+                    <h4>EMAIL US</h4>
+                    <p>info@e-learningstudios.com</p>
+                  </div>
+  
+                </div>
               </div>
-         </div>
-    </header>
-<!-- -->
-<router-outlet>
-</router-outlet>
-    <!-- Contact information -->
-        <section id = 'contact'>
-          <div class = 'container'>
-            <h2>Let's talk, we'd <br>
-              love to hear from you...
-            </h2>
-
-            <div class = 'contact-info'>
-              <div class = 'address'>
-                <h4>VISIT</h4>
+  
+            </div>
+          </section>
+  
+          <!-- Form -->
+          <section id = 'form'>
+            <div class = 'container'>
+              <form>
+                 <div class = 'form-flex'>
+                    <div class = 'input-flex'>
+                      <label for="name">NAME*</label><br>
+                      <input type="text" id="name" name="name"><br>
+                    </div>
+                    <div class = 'input-flex'>               
+                      <label for="number">NUMBER*</label><br>
+                      <input type="text" id="number" name="number"><br>
+                  </div>
+                </div>
+  
+                <label for="email">EMAIL*</label><br>
+                <input type="text" id="email" name="email"><br>
+  
+                <label for="email">COMPANY</label><br>
+                <input type="text" id="company" name="company"><br>
+  
+                <label for="message">MESSAGE</label><br>
+                <textarea id="message" name="message"></textarea><br>
+  
+                <button type="submit">SEND</button>
+              </form>
+            </div>
+          </section>
+  
+          <!-- Footer -->
+          <footer>
+            <div class = 'container'>
+              <div class = 'footer-main'>
+                <img src = 'assets/img/footer-logo.png'>
+  
+                <div class = 'footer-menu'>
+                  <h5>MENU</h5>
+                  <p>Learning</p>
+                  <p>Platform</p>
+                  <p>Delivery</p>
+                  <p>About Us</p>
+                </div>
+  
+  
+               <div class = 'contact-menu'>
+                <h5>CONTACT</h5>
                 <p>The Learning Technology Building,<br>
                   6 Harnall Row, <br>
-                  Coventry CV1 5DR
-                </p>
-                <h4>SHOW ON MAP</h4>
+                  Coventry CV1 5DR</p>
+  
+                <p>info@e-learningstudios.com</p>  
+                <p>(+44) 2476525550</p>
               </div>
-
-              <div class = 'phone-email-container'>
-                <div class = 'phone'>
-                  <h4>CALL US</h4>
-                  <p>(+44) 2476525550</p>
-                </div>
-
-                <div class = 'email'>
-                  <h4>EMAIL US</h4>
-                  <p>info@e-learningstudios.com</p>
-                </div>
-
+            </div>  
+            <div class = 'divider'></div>
+            
+            <div class = 'privacy-policy-social'>
+              <div class = 'footer-link'>
+                <p>&#169; 2020 E-Learning Studios</p>
+                <p>Privacy Policy</p>
+                <p>Apps Privacy Policy</p>
+              </div>
+  
+              <div class = 'social-icons'>
+                <img src = 'assets/img/Icon-awesome-twitter.png'>
+                <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
+                <img src = 'assets/img/Icon-awesome-youtube.png'>
               </div>
             </div>
-
-          </div>
-        </section>
-
-        <!-- Form -->
-        <section id = 'form'>
-          <div class = 'container'>
-            <form>
-               <div class = 'form-flex'>
-                  <div class = 'input-flex'>
-                    <label for="name">NAME*</label><br>
-                    <input type="text" id="name" name="name"><br>
-                  </div>
-                  <div class = 'input-flex'>               
-                    <label for="number">NUMBER*</label><br>
-                    <input type="text" id="number" name="number"><br>
-                </div>
-              </div>
-
-              <label for="email">EMAIL*</label><br>
-              <input type="text" id="email" name="email"><br>
-
-              <label for="email">COMPANY</label><br>
-              <input type="text" id="company" name="company"><br>
-
-              <label for="message">MESSAGE</label><br>
-              <textarea id="message" name="message"></textarea><br>
-
-              <button type="submit">SEND</button>
-            </form>
-          </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-          <div class = 'container'>
-            <div class = 'footer-main'>
-              <img src = 'assets/img/footer-logo.png'>
-
-              <div class = 'footer-menu'>
-                <h5>MENU</h5>
-                <p>Learning</p>
-                <p>Platform</p>
-                <p>Delivery</p>
-                <p>About Us</p>
-              </div>
-
-
-             <div class = 'contact-menu'>
-              <h5>CONTACT</h5>
-              <p>The Learning Technology Building,<br>
-                6 Harnall Row, <br>
-                Coventry CV1 5DR</p>
-
-              <p>info@e-learningstudios.com</p>  
-              <p>(+44) 2476525550</p>
-            </div>
-          </div>  
-          <div class = 'divider'></div>
-          
-          <div class = 'privacy-policy-social'>
-            <div class = 'footer-link'>
-              <p>&#169; 2020 E-Learning Studios</p>
-              <p>Privacy Policy</p>
-              <p>Apps Privacy Policy</p>
-            </div>
-
-            <div class = 'social-icons'>
-              <img src = 'assets/img/Icon-awesome-twitter.png'>
-              <img src = 'assets/img/Icon-awesome-linkedin-in.png'>
-              <img src = 'assets/img/Icon-awesome-youtube.png'>
-            </div>
-          </div>
-        </div>    
-    </footer>
-</div> 
+          </div>    
+      </footer>
+  </div> 
+  
