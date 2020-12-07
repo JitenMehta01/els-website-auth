@@ -33,7 +33,7 @@
   
               <div class = 'hamburgermenu'>
                 <ng-sidebar-container>
-                    <ng-sidebar [opened]="opened">
+                    <ng-sidebar [mode]="_MODES[_modeNum]" [opened]="opened">
                       <div class = 'menu-cancel-container' (click)="openMenu($event)">
                         <svg> 
                           <use xlink:href="#cancel-sidemenu-icon" class = 'svg-icon'></use>
@@ -43,7 +43,7 @@
                       <div class = 'sidebar-main-content'>
                         <div id = 'menu-main-links'>
                           <div class = 'main-menu-link-item'>
-                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('learning')"  [ngClass]="learning ? 'open' : 'close'">
+                            <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks4($event)"  [ngClass]="status3 ? 'open' : 'close'">
                               <h1>Learning</h1>
                               <div class="open_menu">
                                 <svg> 
@@ -52,7 +52,7 @@
                               </div>
                              </div> 
   
-                             <div class = 'sidebar-submenu-links-container' *ngIf = "learning" [ngClass]="learning ? 'open' : 'close'">
+                             <div class = 'sidebar-submenu-links-container' *ngIf = "toggle3" [ngClass]="status3 ? 'open' : 'close'">
     
                               <div class = 'sidebar-submenu-item'>
                               <h2>People Skills</h2>
@@ -83,7 +83,7 @@
                           </div>
   
                           <div class = 'main-menu-link-item'>
-                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('platform')"  [ngClass]="platform ? 'open' : 'close'">
+                            <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks3($event)"  [ngClass]="status2 ? 'open' : 'close'">
                               <h1>Platform</h1>
                               <div class="open_menu">
                                 <svg> 
@@ -92,7 +92,7 @@
                               </div>
                              </div> 
   
-                             <div class = 'sidebar-submenu-links-container' *ngIf = "platform" [ngClass]="platform ? 'open' : 'close'">
+                             <div class = 'sidebar-submenu-links-container' *ngIf = "toggle2" [ngClass]="status2 ? 'open' : 'close'">
     
                               <div class = 'sidebar-submenu-item'>
                               <h2>Monitor, Measure, Report</h2>
@@ -112,7 +112,7 @@
                           </div>
   
                           <div class = 'main-menu-link-item'>
-                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('delivery')"  [ngClass]="delivery ? 'open' : 'close'">
+                            <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks1($event)"  [ngClass]="status ? 'open' : 'close'">
                               <h1>Delivery</h1>
                               <div class="open_menu">
                                 <svg> 
@@ -121,7 +121,7 @@
                               </div>
                              </div> 
   
-                             <div class = 'sidebar-submenu-links-container' *ngIf = "delivery" [ngClass]="delivery ? 'open' : 'close'">
+                             <div class = 'sidebar-submenu-links-container' *ngIf = "toggle" [ngClass]="status ? 'open' : 'close'">
     
                               <div class = 'sidebar-submenu-item'>
                               <h2>Simple at Scale</h2>
@@ -141,7 +141,7 @@
                           </div>
   
                           <div class = 'about-us-menu-sidebar main-menu-link-item'>
-                            <div class = "about-us-heading submenu-heading"  (click)="toggleLinks('aboutUs')"  [ngClass]="aboutUs ? 'open' : 'close'">
+                            <div class = 'about-us-heading submenu-heading'  (click)="toogleLinks2($event)"  [ngClass]="status1 ? 'open' : 'close'">
                               <h1 >About Us</h1>
                               <div class="open_menu">  
                                 <svg> 
@@ -150,7 +150,7 @@
                               </div>
                             </div>
     
-                            <div class = 'sidebar-submenu-links-container' *ngIf = "aboutUs" [ngClass]="aboutUs ? 'open' : 'close'">
+                            <div class = 'sidebar-submenu-links-container' *ngIf = "toggle1" [ngClass]="status1 ? 'open' : 'close'">
     
                               <div class = 'sidebar-submenu-item'>
                               <h2>Team Profiles</h2>

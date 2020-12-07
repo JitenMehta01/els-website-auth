@@ -12,6 +12,25 @@ export class LayoutComponent {
   ngOnInit(): void {
   }
 
+  public _modeNum: number = 1;
+  public _MODES: Array<string> = ['over', 'push', 'slide'];
+
+
+
+  opened = false;
+  toggle = false;
+  status = false;
+
+  toggle1 = false;
+  status1 = false;
+
+  toggle2 = false;
+  status2 = false;
+
+  toggle3 = false;
+  status3 = false;
+    
+
   openMenu(event: Event){
     if (!this.opened) {
       this.opened = true;
@@ -20,18 +39,52 @@ export class LayoutComponent {
     }
   }
 
-  opened = false;
-  status = false;
+  toogleLinks1(event: Event){
+    setTimeout( () =>{
+      if (!this.toggle) {
+        this.toggle = true;
+        this.status = !this.status;
+      } else{
+        this.toggle = false;
+        this.status = false;
+      }
+    },100)
+  }
 
-  learning = false;
-  platform = false;
-  delivery = false;
-  aboutUs = false;
+  toogleLinks2(event: Event){
+    setTimeout( () =>{
+      if (!this.toggle1) {
+        this.toggle1 = true;
+        this.status1 = !this.status1;
+      } else{
+        this.toggle1 = false;
+        this.status1 = false;
+      }
+    },100)
+  }
 
-  toggleLinks(toggle: string) {
-    this[toggle] = !this[toggle];
+  toogleLinks3(event: Event){
+    setTimeout( () =>{
+      if (!this.toggle2) {
+        this.toggle2 = true;
+        this.status2 = !this.status2;
+      } else{
+        this.toggle2 = false;
+        this.status2 = false;
+      }
+    },100)
+  }
+
+  toogleLinks4(event: Event){
+    setTimeout( () =>{
+      if (!this.toggle3) {
+        this.toggle3 = true;
+        this.status3 = !this.status3;
+      } else{
+        this.toggle3 = false;
+        this.status3 = false;
+      }
+    },100)
   }
 
 }
-
-
