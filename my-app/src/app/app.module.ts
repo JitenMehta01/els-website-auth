@@ -10,7 +10,7 @@ import { SidebarModule } from 'ng-sidebar';
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

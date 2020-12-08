@@ -15,10 +15,8 @@ header{
     & img{
         width:200px;
         margin: 0 auto 0 1em;
-        @include mq('desktop'){
-            margin:0 25px 0 0;
-            order:3;
-        }
+        margin:0 0 0 25px;
+        order:1;
         
     } & .container {
         height:100%;
@@ -39,17 +37,21 @@ header{
             font-weight:600;
             font-size:18px;
             z-index:999;
+            order:2;
             @include mq('tablet'){
-                order:2;
+                margin-left:auto;
             }
+        
             }
         }
     } & .container .hamburgermenu{ 
         width:80px;
         height:65px;;
         background-color:$background-teal;
-        @include mq ('desktop'){
-            margin-right:auto;
+        order:3;
+        margin-left:auto;
+        @include mq ('tablet'){
+            margin-left:initial;
         }
 
 
@@ -58,6 +60,7 @@ header{
         width:35px;
         height:35px;
         fill: $yellow;
+        left:393px;
     }
 
 
@@ -255,6 +258,7 @@ header{
         background-color:$yellow;
         cursor: pointer;
         padding:15px 0;
+        margin-left:auto;
         & svg{
             fill:#fff!important;
         }
@@ -275,9 +279,18 @@ header{
     }
 
     & ng-sidebar-container{ 
-        left:0;
+        left:-369px;
         width:450px;
     }
+
+    & .ng-sidebar__content{
+        left:369px!important;
+    }
+
+    & .ng-sidebar--closed{
+        transform: translateX(101%)!important;
+    }
+
 
 
     & #menu-main-links{
