@@ -50,18 +50,25 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
-header header .container {
+header img {
+  width: 200px;
+  margin: 0 auto 0 1em;
+  margin: 0 0 0 25px;
+  order: 1;
+  cursor: pointer;
+}
+header .container {
   height: 100%;
   display: flex;
   align-items: center;
   padding: 0;
   max-width: 100%;
 }
-header header .container .app-btn {
+header .container button {
   display: none;
 }
 @media (min-width: 768px) {
-  header header .container .app-btn {
+  header .container button {
     display: block;
     margin-right: 20px;
     padding: 12px 35px;
@@ -76,7 +83,7 @@ header header .container .app-btn {
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
-  header header .container .app-btn {
+  header .container button {
     margin-left: auto;
   }
 }
@@ -802,19 +809,6 @@ header .submenu-heading .open_menu {
   /** targets teleconfrence heading only END **/
   /** tablet / desktop for skill container**/
 }
-#our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
-  margin: -40px 0 0 10px;
-}
-@media (min-width: 768px) {
-  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
-    margin: -67px 0 0 10px;
-  }
-}
-@media (min-width: 1295px) {
-  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) h2 {
-    margin: -40px 0 0 10px;
-  }
-}
 #our-people-skill-products .container .skill-container .skill-image-container {
   position: relative;
   margin-bottom: 25px;
@@ -823,15 +817,113 @@ header .submenu-heading .open_menu {
   width: 100%;
 }
 #our-people-skill-products .container .skill-container .skill-image-container h2 {
-  color: #fff;
-  margin: -40px 0 0 10px;
-  padding-bottom: 8px;
-  position: relative;
-  z-index: 1;
+  font-size: 18.5px;
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container h2 {
+    font-size: 16.4px;
+  }
+}
+@media (min-width: 1300px) {
+  #our-people-skill-products .container .skill-container .skill-image-container h2 {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1024px) {
   #our-people-skill-products .container .skill-container .skill-image-container {
-    margin: 25px 5px 25px 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container {
+  color: #fff;
+  padding-bottom: 8px;
+  position: relative;
+  z-index: 99;
+}
+@media (max-width: 568px) {
+  #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container p {
+    font-size: 11px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container p {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container {
+    margin: -81px 5px 25px 5px !important;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1300px) {
+  #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container {
+    margin: -33px 5px 25px 5px !important;
+  }
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container p {
+    margin-top: 30px;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container:hover p {
+    opacity: 1 !important;
+    margin-top: -90px;
+  }
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container h2 {
+    margin-top: -30px;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media (min-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container:hover h2 {
+    margin-top: -130px;
+  }
+}
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(1) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(3) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(4) .skill-desc-container {
+  margin: -108px 0 0 10px;
+}
+@media (min-width: 569px) {
+  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(1) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(3) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(4) .skill-desc-container {
+    margin: -120px 0 0 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(1) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(3) .skill-desc-container {
+    margin: -63px 0 0 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) .skill-desc-container,
+#our-people-skill-products .container .skill-container .skill-image-container:nth-child(4) .skill-desc-container {
+    margin: -85px 0px 0 10px;
+  }
+}
+@media (min-width: 953px) and (max-width: 1024px) {
+  #our-people-skill-products .container .skill-container .skill-image-container:nth-child(2) .skill-desc-container h2 {
+    margin-top: 35px;
   }
 }
 #our-people-skill-products .container .skill-container .skill-image-container::before {
@@ -849,11 +941,6 @@ header .submenu-heading .open_menu {
   #our-people-skill-products .container .skill-container {
     display: flex;
     justify-content: space-between;
-  }
-}
-@media (min-width: 1024px) {
-  #our-people-skill-products .container .skill-container {
-    margin: 0 0px 25px -5px;
   }
 }
 

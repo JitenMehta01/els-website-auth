@@ -84,8 +84,14 @@ align-items: $alitems;
 // mq
 
   @mixin mq ($breakpoint){
+    @if $mobile == 'mobile'{
+      @media (min-width:$breakpoint-tablet){
+        @content;
+    }
+   }
 
-    @if $breakpoint == 'tablet'{
+
+    @else if $breakpoint == 'tablet'{
       @media (min-width:$breakpoint-tablet){
         @content;
     }

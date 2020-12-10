@@ -337,41 +337,138 @@
 
         /** targets teleconfrence heading only **/
 
-        & .skill-image-container:nth-child(2) h2 {
-            margin:-40px 0 0 10px;
+        // & .skill-image-container:nth-child(2) h2 {
+        //     margin:-40px 0 0 0;
 
-            @include mq ('tablet'){
-                margin:-67px 0 0 10px;
-            }
+        //     @include mq ('tablet'){
+        //         margin:-67px 0 0 10px;
+        //     }
 
-            @include mq('large-screen'){
-                margin:-40px 0 0 10px;
-                }
-        }
+        //     @include mq('large-screen'){
+        //         margin:-40px 0 0 10px;
+        //         }
+        // }
 
         /** targets teleconfrence heading only END **/
 
         & .skill-image-container{
             position: relative;
             margin-bottom:25px;
+            @media (min-width:1300px){
+                margin:0 5px 25px 5px;
+            }
+            cursor: pointer;
             & img {
                 width:100%;
             }
-
             & h2 {
-                color:#fff;
-                margin:-40px 0 0 10px;
-                padding-bottom:8px;
-                position: relative;
-                z-index:1;
+                font-size:18.5px;
+                @include mq ('desktop'){
+                    font-size:16.4px;
+                }
+                @media (min-width:1300px){
+                    font-size:20px;
+                }
             }
 
             @include mq ('desktop'){
-                margin:25px 5px 25px 5px;
+                @include flexy($dir:column)
+            }
+
+            & .skill-desc-container {
+                color:#fff;
+                padding-bottom:8px;
+                position: relative;
+                z-index:99;
+                & p {
+                    @media (max-width:568px){
+                        font-size:11px;
+                    }
+                    @media (min-width:768px) and (max-width:1024px){
+                        display:none;
+                    }
+            }
+
+            @include mq ('desktop'){
+                margin:-33px 5px 25px 5px!important;
+                padding-left:10px;
             }
 
         }
 
+
+     }
+
+     & .skill-image-container p{
+     @include mq ('desktop'){
+        margin-top:30px;
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        }
+    }   
+     
+    & .skill-image-container:hover p {
+        @include mq ('desktop'){
+            opacity: 1!important;
+            margin-top:-90px;
+        }
+    }
+
+    & .skill-image-container h2{
+        @include mq ('desktop'){
+           margin-top:-30px;
+           position: absolute;
+           -webkit-transition: all .4s ease-in-out;
+           -moz-transition: all .4s ease-in-out;
+           -ms-transition: all .4s ease-in-out;
+           -o-transition: all .4s ease-in-out;
+           transition: all .4s ease-in-out;
+           }
+       } 
+
+
+    & .skill-image-container:hover h2 {
+        @include mq ('desktop'){
+            margin-top:-130px;
+        }
+    }
+
+     &  .skill-image-container:nth-child(1) .skill-desc-container, 
+     .skill-image-container:nth-child(2) .skill-desc-container,
+     .skill-image-container:nth-child(3) .skill-desc-container,
+     .skill-image-container:nth-child(4) .skill-desc-container{
+         margin:-108px 0 0 10px;
+         @media (min-width:569px){
+             margin:-120px 0 0 10px
+         }
+     }
+     
+     & .skill-image-container:nth-child(1) .skill-desc-container, 
+     .skill-image-container:nth-child(3) .skill-desc-container{
+                     @media (min-width:768px) and (max-width:1024px){
+             margin:-63px 0 0 10px;
+         }
+     }
+
+     & .skill-image-container:nth-child(2) .skill-desc-container, 
+       .skill-image-container:nth-child(4) .skill-desc-container{
+         @media (min-width:768px) and (max-width:1024px){
+             margin:-85px 0px 0 10px
+         }
+     }
+
+      &   .skill-image-container:nth-child(2) .skill-desc-container h2 {
+              @media(min-width:953px) and (max-width:1024px){
+                  margin-top:35px;
+         }
+     }
+        
+    
         
         
 
@@ -389,15 +486,14 @@
 
         /** tablet / desktop for skill container**/
         @include mq ('tablet'){
-            @include flexy($just:space-between)
+            @include flexy($just:space-between);
+            z-index: 50;
         }
 
-        @include mq ('desktop'){
-            margin:0 0px 25px -5px;
-        }
 
     }
-}
+ }
+
 
  /***** testimonial
  *****************************/
