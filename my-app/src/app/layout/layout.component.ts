@@ -13,9 +13,6 @@ export class LayoutComponent {
   ngOnInit(): void {
   }
 
-  public _modeNum: number = 1;
-  public _MODES: Array<string> = ['over', 'push', 'slide'];
-
   menu_links = [
     {
        'name': 'Learning', 

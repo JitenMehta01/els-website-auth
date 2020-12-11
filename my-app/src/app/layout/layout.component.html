@@ -32,7 +32,7 @@
               <button routerLink="/login">Log in</button>
   
               <div class = 'hamburgermenu'>
-                <ng-sidebar-container>
+                <ng-sidebar-container [ngClass]="opened ? 'left-open' : 'left-close'">
                     <ng-sidebar [opened]="opened">
                       <div class = 'menu-cancel-container' (click)="opened = !opened">
                         <svg> 

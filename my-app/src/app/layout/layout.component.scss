@@ -285,7 +285,7 @@ header{
     }
 
     & .ng-sidebar__content{
-        left:369px!important;
+        position: initial;
     }
 
     & .ng-sidebar--closed{
@@ -444,4 +444,18 @@ header{
 
 
 
+}
+
+
+.left-close{
+    left:0px!important;
+}
+
+.left-open{
+    left:-369px;
+}
+
+.left-open .ng-sidebar__content > div {
+    left:369px;
+    position: absolute;
 }

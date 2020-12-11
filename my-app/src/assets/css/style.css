@@ -335,7 +335,7 @@ header ng-sidebar-container {
   width: 450px;
 }
 header .ng-sidebar__content {
-  left: 369px !important;
+  position: initial;
 }
 header .ng-sidebar--closed {
   transform: translateX(101%) !important;
@@ -464,6 +464,19 @@ header .submenu-heading {
 }
 header .submenu-heading .open_menu {
   margin-left: auto;
+}
+
+.left-close {
+  left: 0px !important;
+}
+
+.left-open {
+  left: -369px;
+}
+
+.left-open .ng-sidebar__content > div {
+  left: 369px;
+  position: absolute;
 }
 
 /***** app-index
@@ -812,6 +825,12 @@ header .submenu-heading .open_menu {
 #our-people-skill-products .container .skill-container .skill-image-container {
   position: relative;
   margin-bottom: 25px;
+  cursor: pointer;
+}
+@media (min-width: 1300px) {
+  #our-people-skill-products .container .skill-container .skill-image-container {
+    margin: 0 5px 25px 5px;
+  }
 }
 #our-people-skill-products .container .skill-container .skill-image-container img {
   width: 100%;
@@ -853,19 +872,15 @@ header .submenu-heading .open_menu {
 }
 @media (min-width: 1024px) {
   #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container {
-    margin: -81px 5px 25px 5px !important;
-    padding-left: 10px;
-  }
-}
-@media (min-width: 1300px) {
-  #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container {
     margin: -33px 5px 25px 5px !important;
+    padding-left: 10px;
   }
 }
 @media (min-width: 1024px) {
   #our-people-skill-products .container .skill-container .skill-image-container p {
     margin-top: 30px;
     position: absolute;
+    opacity: 0;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -941,6 +956,7 @@ header .submenu-heading .open_menu {
   #our-people-skill-products .container .skill-container {
     display: flex;
     justify-content: space-between;
+    z-index: 50;
   }
 }
 
