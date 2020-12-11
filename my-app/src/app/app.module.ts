@@ -6,7 +6,6 @@ import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SidebarModule } from 'ng-sidebar';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     RouterModule.forRoot(AppRoutes), 
-    SidebarModule.forRoot(), FontAwesomeModule,
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

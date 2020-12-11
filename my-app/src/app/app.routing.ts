@@ -2,8 +2,6 @@ import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './pages/login/login.component';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 
 
 export const AppRoutes: Routes = [
@@ -20,7 +18,5 @@ export const AppRoutes: Routes = [
 ]
 
 export class AppModule {
-	constructor() {
-	  library.add(faSquare, faCheckSquare);
-	}
+
   }
