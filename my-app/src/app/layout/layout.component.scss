@@ -442,20 +442,21 @@ header{
         }
     }
 
+    // closes width of sidebar container if open or close
+      &  .left-close{
+            left:0px!important;
+        }
+
+        .left-open{
+            left:-369px;
+        }
+
+        .left-open .ng-sidebar__content > div {
+            left:369px;
+            position: absolute;
+        }
+
 
 
 }
 
-
-.left-close{
-    left:0px!important;
-}
-
-.left-open{
-    left:-369px;
-}
-
-.left-open .ng-sidebar__content > div {
-    left:369px;
-    position: absolute;
-}

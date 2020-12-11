@@ -465,16 +465,13 @@ header .submenu-heading {
 header .submenu-heading .open_menu {
   margin-left: auto;
 }
-
-.left-close {
+header .left-close {
   left: 0px !important;
 }
-
-.left-open {
+header .left-open {
   left: -369px;
 }
-
-.left-open .ng-sidebar__content > div {
+header .left-open .ng-sidebar__content > div {
   left: 369px;
   position: absolute;
 }
