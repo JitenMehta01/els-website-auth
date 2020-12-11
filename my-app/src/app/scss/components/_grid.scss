@@ -7,6 +7,7 @@
     grid-template-areas:
     "header"
     "app-index"
+    "login"
     "contact"
     "form"
     "footer";
@@ -36,10 +37,12 @@
   
   #main{
     @include mq ('desktop'){
+        display: grid;
         grid-template-columns:80px 2fr repeat(2, 1fr);
         grid-template-areas:
         "header header header header"
         "app-index app-index app-index app-index"   
+        "login login login login"
         "contact contact form form "     
         "footer footer footer footer";
           
