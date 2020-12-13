@@ -454,6 +454,11 @@ header{
         .left-open .ng-sidebar__content > div {
             left:369px;
             position: absolute;
+
+        }
+
+        & ng-sidebar-container{
+            transition:all transform 0.3s cubic-bezier(0, 0, 0.3, 1);
         }
 
 

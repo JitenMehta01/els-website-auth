@@ -379,7 +379,7 @@
                 color:#fff;
                 padding-bottom:8px;
                 position: relative;
-                z-index:99;
+                z-index:98;
                 & p {
                     @media (max-width:568px){
                         font-size:11px;
@@ -409,6 +409,7 @@
         -ms-transition: all .4s ease-in-out;
         -o-transition: all .4s ease-in-out;
         transition: all .4s ease-in-out;
+        visibility: hidden;
         }
     }   
      
@@ -416,6 +417,7 @@
         @include mq ('desktop'){
             opacity: 1!important;
             margin-top:-90px;
+            visibility: visible;
         }
     }
 
@@ -558,14 +560,13 @@
         }
 
         & .slider-control{
-            display:none;
-            @include mq ('desktop'){
                 @include flexy($just:flex-end, $alitems:center);
                 width:120px;
 
-                & svg{
+                & .testimonial-svg{
                     flex-basis:15px;
                     height:15px;
+                    cursor:pointer;
                 }
     
                 & p{
@@ -573,7 +574,7 @@
                     font-size:20px;
                     color:$teal;
                 }
-            }
+            
             }
 
     }

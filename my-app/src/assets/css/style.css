@@ -855,7 +855,6 @@ header .left-open .ng-sidebar__content > div {
   color: #fff;
   padding-bottom: 8px;
   position: relative;
-  z-index: 99;
 }
 @media (max-width: 568px) {
   #our-people-skill-products .container .skill-container .skill-image-container .skill-desc-container p {
@@ -1023,24 +1022,20 @@ header .left-open .ng-sidebar__content > div {
   margin-top: 0;
 }
 #testimonial .container .testimonial-slider .slider-control {
-  display: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 120px;
 }
-@media (min-width: 1024px) {
-  #testimonial .container .testimonial-slider .slider-control {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 120px;
-  }
-  #testimonial .container .testimonial-slider .slider-control svg {
-    flex-basis: 15px;
-    height: 15px;
-  }
-  #testimonial .container .testimonial-slider .slider-control p {
-    margin: 0 15px;
-    font-size: 20px;
-    color: #2A464E;
-  }
+#testimonial .container .testimonial-slider .slider-control .testimonial-svg {
+  flex-basis: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+#testimonial .container .testimonial-slider .slider-control p {
+  margin: 0 15px;
+  font-size: 20px;
+  color: #2A464E;
 }
 
 /***** client logos
