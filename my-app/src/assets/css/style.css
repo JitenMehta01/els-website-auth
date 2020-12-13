@@ -628,7 +628,7 @@ header .left-open .ng-sidebar__content > div {
     margin-bottom: 0;
   }
   #hero-section .progress-bar .bar {
-    background-color: #8D8D8C;
+    background-color: #F3B82A;
     height: 115px;
     display: flex;
     flex-direction: column;
@@ -637,7 +637,7 @@ header .left-open .ng-sidebar__content > div {
   }
   #hero-section .progress-bar .bar .bar-0-percent {
     padding: 1.5px;
-    background-color: #2A464E;
+    background-color: #0E7368;
     height: 15%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;

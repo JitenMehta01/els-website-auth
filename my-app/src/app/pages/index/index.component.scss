@@ -143,14 +143,14 @@
         }
 
         & .bar{
-            background-color:#8D8D8C;
+            background-color:$yellow;
             height:115px;
             @include flexy($dir:column, $just:flex-end);
             margin-left:15px;
 
             & .bar-0-percent{
                 padding:1.5px;
-                background-color: $teal;
+                background-color: #0E7368;
                 height:15%;  
                 border-bottom-left-radius: 25px;
                 border-bottom-right-radius: 25px;
