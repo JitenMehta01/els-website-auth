@@ -11,7 +11,7 @@ export const AppRoutes: Routes = [
 		children: [
 			 { path: '', redirectTo: '/home', pathMatch: 'full'},
 			 { path: 'home', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)},
-			 { path: 'login', component: LoginComponent }
+			 { path: 'login', component: LoginComponent}
 		]
 	}
 
