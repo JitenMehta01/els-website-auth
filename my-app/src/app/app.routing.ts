@@ -13,12 +13,7 @@ export const AppRoutes: Routes = [
 		children: [
 			 { path: '', redirectTo: '/home', pathMatch: 'full'},
 			 { path: 'home', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)},
-<<<<<<< HEAD
-			 { path: 'login', component: LoginComponent },
-			 { path: '**', redirectTo: '' }
-=======
-			 { path: 'login', component: LoginComponent}
->>>>>>> 367d33d4c52dc25a8f89d5cada078856fe69177e
+			 { path: 'login', component: LoginComponent }
 		]
 	}
 
