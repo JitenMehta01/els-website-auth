@@ -17,7 +17,7 @@ export class AuthenticationService {
         private http: HttpClient
     ) {
         // this.userSubject = new BehaviorSubject<User>(null);
-        this.user = this.userSubject.asObservable();
+        // this.user = return this.userSubject.asObservable();
     }
 
     public get userValue(): User {
