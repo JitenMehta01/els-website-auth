@@ -3,8 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  apiUrl: 'release.xrlplatform.com/api/account/detail'
+  production: true,
+  apiUrl: 'release.xrlplatform.com/api/account/detail/',
+  wsUrl: 'ws:release.xrlplatform.com/api/account/detail//ws',
+  jwtLogin: 'api/token/',
+  jwtRefresh: 'api/token/refresh/',
 };
 
 /*
