@@ -8,7 +8,7 @@
 }
 
 :host + #contact{
-  display:none; 
+  display:none;
 }
 
 .container-login100-form-btn{
@@ -74,7 +74,7 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
-.txt1 { 
+.txt1 {
   font-size: 16px;
   color: #cccccc;
   line-height: 1.4;
@@ -99,7 +99,7 @@ iframe {
 }
 
 .container-login100 {
-  width: 100%;  
+  width: 100%;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -113,7 +113,7 @@ iframe {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   position: relative;
   z-index: 1;
 }

@@ -1,29 +1,19 @@
-
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
+import { IndexComponent } from './pages/index/index.component';
 import { LoginComponent } from './pages/login/login.component';
-
-
 
 export const AppRoutes: Routes = [
 	{
 		path: '',
 		component: LayoutComponent,
 		children: [
-			 { path: '', redirectTo: '/home', pathMatch: 'full'},
-			 { path: 'home', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)},
+			 { path: '', redirectTo: 'home', pathMatch: 'full'},
+			 { path: 'home', component: IndexComponent },
 			 { path: 'login', component: LoginComponent }
 		]
 	}
 
-];
+]
 
-@NgModule({
-    imports: [RouterModule.forRoot(AppRoutes)],
-    exports: [RouterModule]
-})
-
-export class AppModule {
-
-  }
+export class AppModule { }

@@ -22,7 +22,7 @@
     z-index:1;
     margin-top:-70px;
     background-size:cover;
-    background-image: url('../../../assets/img/hero-tinted.jpg');
+    background-image: url('/assets/img/hero-tinted.jpg');
     background-position:top center;
     height:100vh;
     & .container{
@@ -43,12 +43,12 @@
 
         }
 
-        
+
     }
 
     & .container .arrow-container-mobile{
 
-        & .arrow-mobile{ 
+        & .arrow-mobile{
             & p {
                 margin-right:auto;
             }
@@ -68,7 +68,7 @@
         }
         background-color:$background-teal;
         margin-top:auto;
-        align-self: flex-start; 
+        align-self: flex-start;
         text-align: left;
         padding: 25px;
         @include mq('desktop'){
@@ -105,11 +105,11 @@
             @include flexy($dir:row);
             align-self: flex-start;
             width:80%;
-            padding-left:5%; 
+            padding-left:5%;
         }
         & div {
             @include flexy($just:flex-start, $dir:column, $alitems:flex-start);
-            text-align: left;  
+            text-align: left;
             padding:10px 30px;
         }   & h5{
             margin:0;
@@ -151,17 +151,17 @@
             & .bar-0-percent{
                 padding:1.5px;
                 background-color: #0E7368;
-                height:15%;  
+                height:15%;
                 border-bottom-left-radius: 25px;
                 border-bottom-right-radius: 25px;
             }
         }
     }
-  } 
+  }
 
 }
 
- 
+
 
 /***** e-learning intro
 *****************************/
@@ -172,8 +172,8 @@
     }
 }
 
-#e-learning-intro .container h2, 
-#e-learning-intro .container h5, 
+#e-learning-intro .container h2,
+#e-learning-intro .container h5,
 #e-learning-intro .container p{
     color:$teal;
 }
@@ -186,15 +186,15 @@
         }
     }
 
-    & > h5 + h2, 
+    & > h5 + h2,
     & h5{
         @include mq ('desktop'){
             text-align: center;
             }
     }
-    
+
     & h4{
-        color:$teal; 
+        color:$teal;
     }
 
     /* e-learning-flexy */
@@ -213,17 +213,17 @@
     width:70%;
     align-self:center;
     margin-top:25px;
-    @include mq ('desktop'){ 
+    @include mq ('desktop'){
         width:500px;
         margin-right:25px;
-        
+
     }
     }
 
     @include mq ('desktop'){
         flex-direction: row-reverse;
         justify-content: space-between;
-        
+
         & > div {
             width:60%;
         }
@@ -262,7 +262,7 @@
         @include mq('desktop'){
                     margin: 0px 135px 0 0;
         }
-    } 
+    }
     @include flexy($dir:column,$alitems:center);
     & div{
         @include flexy($dir:column, $alitems:center);
@@ -315,10 +315,10 @@
 
 #our-people-skill-products .container{
     @include mq ('tablet'){
-        @include flexy($dir:column,$alitems:center); 
+        @include flexy($dir:column,$alitems:center);
     }
 
-    & h5, 
+    & h5,
     & h5 + p{
         color:$teal;
         text-align: center;
@@ -411,8 +411,8 @@
         transition: all .4s ease-in-out;
         visibility: hidden;
         }
-    }   
-     
+    }
+
     & .skill-image-container:hover p {
         @include mq ('desktop'){
             opacity: 1!important;
@@ -431,7 +431,7 @@
            -o-transition: all .4s ease-in-out;
            transition: all .4s ease-in-out;
            }
-       } 
+       }
 
 
     & .skill-image-container:hover h2 {
@@ -440,7 +440,7 @@
         }
     }
 
-     &  .skill-image-container:nth-child(1) .skill-desc-container, 
+     &  .skill-image-container:nth-child(1) .skill-desc-container,
      .skill-image-container:nth-child(2) .skill-desc-container,
      .skill-image-container:nth-child(3) .skill-desc-container,
      .skill-image-container:nth-child(4) .skill-desc-container{
@@ -449,15 +449,15 @@
              margin:-120px 0 0 10px
          }
      }
-     
-     & .skill-image-container:nth-child(1) .skill-desc-container, 
+
+     & .skill-image-container:nth-child(1) .skill-desc-container,
      .skill-image-container:nth-child(3) .skill-desc-container{
                      @media (min-width:768px) and (max-width:1024px){
              margin:-63px 0 0 10px;
          }
      }
 
-     & .skill-image-container:nth-child(2) .skill-desc-container, 
+     & .skill-image-container:nth-child(2) .skill-desc-container,
        .skill-image-container:nth-child(4) .skill-desc-container{
          @media (min-width:768px) and (max-width:1024px){
              margin:-85px 0px 0 10px
@@ -469,10 +469,10 @@
                   margin-top:35px;
          }
      }
-        
-    
-        
-        
+
+
+
+
 
         .skill-image-container::before{
             content: '';
@@ -482,7 +482,7 @@
             bottom: 0;
             right: 0;
             z-index: 1;
-            background: linear-gradient(180deg, rgba(42,70,78,0.1) 0%, rgba(8,14,16,0.5) 35%); 
+            background: linear-gradient(180deg, rgba(42,70,78,0.1) 0%, rgba(8,14,16,0.5) 35%);
             width:100%;
         }
 
@@ -503,7 +503,7 @@
     background-color: #F2F2F2;
 }
 #testimonial .container{
-    & .speech-marks{    
+    & .speech-marks{
         @include flexy;
         & h3{
             margin-top:40px;
@@ -536,7 +536,7 @@
             }
             @include flexy($alitems:flex-start);
             flex:1;
-            
+
 
             & img{
                 margin-right:10px;
@@ -568,13 +568,13 @@
                     height:15px;
                     cursor:pointer;
                 }
-    
+
                 & p{
                     margin: 0 15px;
                     font-size:20px;
                     color:$teal;
                 }
-            
+
             }
 
     }
@@ -584,8 +584,8 @@
  /***** client logos
  *****************************/
 
- #client-logos{ 
-    
+ #client-logos{
+
     background-color: #FAFAFA;
      & .container{
          width:100%;
@@ -596,9 +596,9 @@
      width:100%;
      & .logo-container{
          width:100%;
-         @include flexy($wrap:wrap, $just:space-between, $alitems:center); 
+         @include flexy($wrap:wrap, $just:space-between, $alitems:center);
          & img{
-             width:50px; 
+             width:50px;
              @include mq ('tablet'){
                  width:100px;
              }
@@ -611,18 +611,18 @@
      margin: 0 auto;
      padding:25px;
      & h5 {
-       font-weight:800; 
+       font-weight:800;
        letter-spacing: .4em;
        color:$teal;
        text-align: center;
      }
  }
- 
- 
+
+
 
  /***** contact info
  *****************************/
- 
+
  #contact{
      margin-top:-40px;
      @include mq('desktop'){
@@ -644,9 +644,9 @@
                 font-weight:900;
                 margin:0;
             }
-            & p{ 
+            & p{
                 margin:10px 0;
-            }   
+            }
         }
 
         & .address h4:last-child{
