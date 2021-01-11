@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
@@ -8,7 +9,16 @@ import { Component, OnInit, HostListener } from '@angular/core';
 
 export class LayoutComponent {
 
-  constructor() { }
+  showSideNav = true;
+  menuLogin = false;
+  router: string;
+
+  constructor(private _router: Router){
+
+    this.router = _router.url; 
+}
+
+
 
   ngOnInit(): void {
   }

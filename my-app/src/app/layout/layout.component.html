@@ -31,7 +31,7 @@
              <img routerLink="/home" src = 'assets/img/els-logo.png'>
               <button routerLink="/login">Log in</button>
   
-              <div class = 'hamburgermenu'>
+              <div class = 'hamburgermenu' *ngIf="_router.url != '/login'">
                 <ng-sidebar-container [ngClass]="opened ? 'left-open' : 'left-close'">
                     <ng-sidebar [opened]="opened">
                       <div class = 'menu-cancel-container' (click)="opened = !opened">
@@ -40,7 +40,7 @@
                         </svg>
                       </div>
   
-                      <div class = 'sidebar-main-content'>
+                      <div class = 'sidebar-main-content' >
                         <div id = 'menu-main-links'>
                           <div class = 'main-menu-link-item' *ngFor="let item of menu_links">
                             <div class = 'about-us-heading submenu-heading'  [ngClass]="item.toggled ? 'open' : 'close'" (click)="item.toggled = !item.toggled">
