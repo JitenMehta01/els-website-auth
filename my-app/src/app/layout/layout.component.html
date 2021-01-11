@@ -29,7 +29,7 @@
        <header>
            <div class = 'container'>
              <img routerLink="/home" src = 'assets/img/els-logo.png'>
-              <button routerLink="/login">Log in</button>
+              <button routerLink="/login" *ngIf="_router.url != '/login'">Log in</button>
   
               <div class = 'hamburgermenu' *ngIf="_router.url != '/login'">
                 <ng-sidebar-container [ngClass]="opened ? 'left-open' : 'left-close'">
